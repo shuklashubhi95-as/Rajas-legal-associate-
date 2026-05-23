@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Rajas Legal Associates | Adv. Shubhanjali Shukla | High Court Lucknow</title>
+  <title>Rajesh Legal Associates | Adv. Shubhanjali Shukla | High Court Lucknow</title>
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
@@ -22,7 +22,7 @@
       line-height: 1.5;
     }
 
-    /* Navigation */
+    /* Navigation - Single Page Smooth Scroll */
     .navbar {
       background: #ffffff;
       padding: 0.8rem 2rem;
@@ -67,10 +67,8 @@
       font-size: 0.95rem;
       cursor: pointer;
     }
-    .nav-links a:hover, .nav-links a.active {
+    .nav-links a:hover {
       color: #b87c3a;
-      border-bottom: 2px solid #c9974e;
-      padding-bottom: 4px;
     }
 
     .menu-toggle {
@@ -86,20 +84,6 @@
       max-width: 1280px;
       margin: 0 auto;
       padding: 2rem 1.5rem;
-    }
-
-    /* Page switching */
-    .page {
-      display: none;
-      animation: fadeIn 0.3s ease;
-    }
-    .page.active-page {
-      display: block;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px);}
-      to { opacity: 1; transform: translateY(0);}
     }
 
     /* Cards */
@@ -179,7 +163,6 @@
     .btn-call { background: #1e2a36; color: white; border: none; }
     .btn-wa:hover, .btn-call:hover { transform: translateY(-2px); opacity: 0.9;}
 
-    /* Practice Areas Grid */
     .section-title {
       font-size: 1.6rem;
       font-family: 'Merriweather', serif;
@@ -231,17 +214,25 @@
       border-top: 1px solid #e8dfd3;
       margin-top: 2rem;
     }
-    .contact-sidebar {
-      background: #fefaf5;
+    .info-footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .info-card {
+      flex: 1;
+      background: white;
+      border-radius: 1.2rem;
       padding: 1.2rem;
-      border-radius: 1rem;
-      margin-top: 1.5rem;
+      border: 1px solid #eee5d9;
     }
     @media (max-width: 700px) {
       .nav-links { display: none; width: 100%; flex-direction: column; gap: 0.8rem; }
       .nav-links.show { display: flex; }
       .menu-toggle { display: block; }
       .profile-flex { flex-direction: column; }
+      h1 { font-size: 1.6rem; }
     }
   </style>
 </head>
@@ -250,22 +241,22 @@
 <div class="navbar">
   <div class="nav-container">
     <div class="logo">
-      <h2>⚖️ Rajas Legal Associates</h2>
+      <h2>⚖️ Rajesh Legal Associates</h2>
       <p>Advocates & Legal Consultants</p>
     </div>
     <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
-      <a class="nav-item active" data-page="home">Home</a>
-      <a class="nav-item" data-page="about">About</a>
-      <a class="nav-item" data-page="practice">Practice Areas</a>
-      <a class="nav-item" data-page="contact">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#practice">Practice Areas</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <!-- HOME PAGE (exactly as image layout) -->
-  <div id="home-page" class="page active-page">
+  <!-- HOME / HERO SECTION -->
+  <section id="home">
     <div class="hero-card">
       <div class="profile-flex">
         <div class="photo-area">
@@ -294,8 +285,10 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Practice Areas section exactly as image -->
+  <!-- PRACTICE AREAS SECTION -->
+  <section id="practice">
     <div class="section-title"><i class="fas fa-gavel"></i> PRACTICE AREAS</div>
     <div class="practice-grid">
       <div class="practice-item"><i class="fas fa-file-contract"></i> <strong>CIVIL MATTERS</strong><br>Representation and advice in all types of civil disputes.</div>
@@ -305,8 +298,10 @@
       <div class="practice-item"><i class="fas fa-file-signature"></i> <strong>DOCUMENTATION & AFFIDAVITS</strong><br>Drafting, vetting and preparation of all types of documents & affidavits.</div>
       <div class="practice-item"><i class="fas fa-comments"></i> <strong>LEGAL CONSULTATION</strong><br>Providing effective legal advice and solutions.</div>
     </div>
+  </section>
 
-    <!-- About preview -->
+  <!-- ABOUT SECTION -->
+  <section id="about">
     <div class="section-title"><i class="fas fa-info-circle"></i> ABOUT</div>
     <div class="card" style="padding: 1.5rem;">
       <p>With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.</p>
@@ -317,72 +312,33 @@
         <div class="about-card"><i class="fas fa-users" style="color:#c9974e;"></i><br><strong>CLIENT FOCUSED</strong><br>Best outcomes for clients</div>
       </div>
     </div>
+  </section>
 
-    <!-- Quick Links + Contact + Consultation (exactly as image footer area) -->
-    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
-      <div class="card" style="flex:1; padding: 1.2rem;">
+  <!-- CONTACT + QUICK LINKS + CONSULTATION SECTION -->
+  <section id="contact">
+    <div class="info-footer-grid">
+      <div class="info-card">
         <h3><i class="fas fa-link"></i> QUICK LINKS</h3>
         <ul style="list-style: none; margin-top: 0.8rem;">
-          <li>🏠 Home</li><li>📖 About</li><li>⚖️ Practice Areas</li><li>📌 Services</li><li>📞 Contact</li>
+          <li>🏠 Home</li>
+          <li>⚖️ Practice Areas</li>
+          <li>📖 About</li>
+          <li>📞 Contact</li>
         </ul>
       </div>
-      <div class="card" style="flex:1; padding: 1.2rem;">
+      <div class="info-card">
         <h3><i class="fas fa-address-card"></i> CONTACT INFORMATION</h3>
         <p><i class="fas fa-building"></i> High Court New Building<br>Chamber No. B-509, 4th Floor, Lucknow</p>
         <p><i class="fas fa-phone-alt"></i> 9005017567</p>
         <p><i class="fas fa-calendar-alt"></i> Available on Request</p>
       </div>
-      <div class="card" style="flex:1; padding: 1.2rem;">
+      <div class="info-card">
         <h3><i class="fas fa-handshake"></i> CONSULTATION</h3>
         <p>Schedule an appointment for your consultation and assistance.</p>
         <a href="https://wa.me/919005017567" class="btn btn-wa" style="margin-top: 0.8rem; display: inline-block;">Book via WhatsApp</a>
       </div>
     </div>
-  </div>
-
-  <!-- ABOUT PAGE -->
-  <div id="about-page" class="page">
-    <div class="card" style="padding: 2rem;">
-      <h2>About Adv. Shubhanjali Shukla</h2>
-      <p style="margin-top: 1rem;">With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.</p>
-      <div class="about-grid" style="margin-top: 1.5rem;">
-        <div class="about-card"><i class="fas fa-shield-alt"></i><br><strong>INTEGRITY</strong><br>We uphold highest standards of integrity and ethics.</div>
-        <div class="about-card"><i class="fas fa-heart"></i><br><strong>DEDICATION</strong><br>Dedicated to providing personalized and result-driven services.</div>
-        <div class="about-card"><i class="fas fa-chart-line"></i><br><strong>EXPERIENCE</strong><br>Extensive knowledge and experience in various legal matters.</div>
-        <div class="about-card"><i class="fas fa-users"></i><br><strong>CLIENT FOCUSED</strong><br>Committed to achieving the best outcomes for our clients.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- PRACTICE PAGE (detailed) -->
-  <div id="practice-page" class="page">
-    <div class="card" style="padding: 2rem;">
-      <h2>Our Practice Areas</h2>
-      <div class="practice-grid">
-        <div class="practice-item"><strong>CIVIL MATTERS</strong><br>Representation and advice in all types of civil disputes.</div>
-        <div class="practice-item"><strong>CRIMINAL MATTERS</strong><br>Effective representation in criminal cases and proceedings.</div>
-        <div class="practice-item"><strong>FAMILY & MATRIMONIAL</strong><br>Divorce, maintenance, custody, and all family related legal matters.</div>
-        <div class="practice-item"><strong>PROPERTY DISPUTES</strong><br>Property registration, disputes, partition, sale, purchase & possession matters.</div>
-        <div class="practice-item"><strong>DOCUMENTATION & AFFIDAVITS</strong><br>Drafting, vetting and preparation of all types of documents & affidavits.</div>
-        <div class="practice-item"><strong>LEGAL CONSULTATION</strong><br>Providing effective legal advice and solutions.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT PAGE -->
-  <div id="contact-page" class="page">
-    <div class="card" style="padding: 2rem;">
-      <h2>Contact Us</h2>
-      <p><strong>Advocate Shubhanjali Shukla</strong></p>
-      <p><i class="fas fa-building"></i> High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</p>
-      <p><i class="fas fa-phone-alt"></i> 9005017567</p>
-      <p><i class="fab fa-whatsapp"></i> WhatsApp: 9005017567</p>
-      <div class="btn-group" style="margin-top: 1rem;">
-        <a href="https://wa.me/919005017567" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="tel:+919005017567" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call</a>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <div class="footer-note">
     © 2024 Rajesh Legal Associates. All Rights Reserved.<br>
@@ -391,39 +347,26 @@
 </div>
 
 <script>
-  const pages = {
-    home: document.getElementById('home-page'),
-    about: document.getElementById('about-page'),
-    practice: document.getElementById('practice-page'),
-    contact: document.getElementById('contact-page')
-  };
-  
-  const navItems = document.querySelectorAll('.nav-item');
-  
-  function activatePage(pageId) {
-    Object.keys(pages).forEach(key => pages[key].classList.remove('active-page'));
-    pages[pageId].classList.add('active-page');
-    navItems.forEach(item => {
-      item.classList.remove('active');
-      if(item.getAttribute('data-page') === pageId) item.classList.add('active');
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  if(menuToggle) {
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
     });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  
-  navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('.nav-links a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
       e.preventDefault();
-      const page = item.getAttribute('data-page');
-      if(page === 'home') activatePage('home');
-      else if(page === 'about') activatePage('about');
-      else if(page === 'practice') activatePage('practice');
-      else if(page === 'contact') activatePage('contact');
-      document.getElementById('navLinks')?.classList.remove('show');
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if(targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        navLinks.classList.remove('show');
+      }
     });
-  });
-  
-  document.getElementById('menuToggle')?.addEventListener('click', () => {
-    document.getElementById('navLinks')?.classList.toggle('show');
   });
 </script>
 </body>
