@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Advocate Shubhanjali Shukla | Legal Associate, High Court Lucknow</title>
+  <title>Advocate Shubhanjali Shukla | Rajas Legal Associate, High Court Lucknow</title>
   <!-- Font Awesome 6 (Free Icons) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts: Poppins & Merriweather for elegant legal feel -->
@@ -24,14 +24,13 @@
       scroll-behavior: smooth;
     }
 
-    /* container */
     .container {
       max-width: 1280px;
       margin: 0 auto;
       padding: 2rem 1.5rem;
     }
 
-    /* card styling — courtroom elegance */
+    /* main card */
     .hero-card {
       background: #ffffff;
       border-radius: 2rem;
@@ -58,30 +57,42 @@
     .profile-left {
       flex: 1.2;
       min-width: 220px;
+      text-align: center;
     }
 
     .profile-right {
       flex: 2.5;
     }
 
-    .avatar-icon {
-      background: linear-gradient(145deg, #faf3e0, #f0e5d2);
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.25rem;
-      box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.2);
-      border: 3px solid #e4c697;
+    /* PHOTO CONTAINER - using the specific image name */
+    .photo-container {
+      background: #faf3e8;
+      border-radius: 1.5rem;
+      padding: 0.6rem;
+      box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+      border: 2px solid #e4c697;
+      transition: transform 0.2s ease;
+      max-width: 200px;
+      margin: 0 auto 1.25rem auto;
     }
-
-    .avatar-icon i {
-      font-size: 4rem;
-      color: #7a4b2a;
+    .photo-container:hover {
+      transform: scale(1.01);
     }
-
+    .advocate-photo {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      display: block;
+      object-fit: cover;
+      background-color: #e9ddce;
+      aspect-ratio: 1 / 1;
+      object-position: center;
+    }
+    /* fallback if image missing: show elegant icon+text */
+    .photo-placeholder-fallback {
+      display: none;
+    }
+    /* badge style */
     .badge {
       display: inline-block;
       background: #e9dfce;
@@ -214,7 +225,6 @@
       padding-top: 1rem;
     }
 
-    /* additional sections */
     .info-grid {
       display: flex;
       flex-wrap: wrap;
@@ -242,7 +252,6 @@
       margin-top: 1.5rem;
     }
 
-    /* responsive */
     @media (max-width: 700px) {
       .container {
         padding: 1rem;
@@ -262,9 +271,11 @@
         flex-direction: column;
         align-items: flex-start;
       }
+      .photo-container {
+        max-width: 160px;
+      }
     }
 
-    /* subtle gold micro details */
     hr {
       border: none;
       height: 1px;
@@ -291,9 +302,19 @@
     
     <div class="profile-section">
       <div class="profile-left">
-        <div class="avatar-icon">
-          <i class="fas fa-gavel"></i>
+        <!-- PHOTO SECTION: using the exact provided image name -->
+        <div class="photo-container">
+          <img class="advocate-photo" 
+               src="4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg" 
+               alt="Advocate Shubhanjali Shukla - Legal Associate High Court Lucknow"
+               onerror="this.onerror=null; this.style.display='none'; document.getElementById('photoFallback').style.display='flex';">
+          <!-- elegant fallback if image not found (still shows advocate identity) -->
+          <div id="photoFallback" style="display: none; flex-direction: column; align-items: center; justify-content: center; background: #ede0cf; border-radius: 1rem; padding: 1rem; text-align: center;">
+            <i class="fas fa-user-graduate" style="font-size: 3rem; color: #996e3e;"></i>
+            <span style="font-size: 0.75rem; margin-top: 8px; color: #4f3a24;">Adv. Shubhanjali Shukla</span>
+          </div>
         </div>
+        <!-- badge area below photo -->
         <div class="badge">
           <i class="fas fa-balance-scale"></i> Legal Associate
         </div>
@@ -343,7 +364,7 @@
       </div>
     </div>
     
-    <!-- Expertise / Quick links - additional modern look -->
+    <!-- Expertise / Quick links -->
     <div style="padding: 0.5rem 2rem 1.8rem 2rem;">
       <div class="info-grid">
         <div class="card-mini"><i class="fas fa-file-signature"></i> <span>Drafting &amp; Pleadings</span></div>
@@ -365,7 +386,7 @@
     </div>
   </div>
   
-  <!-- Consultation section (optional anchor) -->
+  <!-- Consultation section (anchor) + photo re-iteration note: professional touch -->
   <div id="consult" style="scroll-margin-top: 2rem;"></div>
   <div style="margin-top: 2rem; background: white; border-radius: 1.8rem; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.05); padding: 1.8rem; border: 1px solid #ede3d4;">
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
@@ -384,7 +405,7 @@
     </div>
   </div>
   
-  <!-- micro data / court location card to highlight chamber -->
+  <!-- micro data / court location card to highlight chamber + photo mention -->
   <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem;">
     <div style="background: #fff; border-radius: 1.4rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; border: 1px solid #f0e2d0; flex:1;">
       <i class="fas fa-map-pin" style="color:#ab7a44;"></i> <strong>High Court Chamber:</strong> 509, 4th Floor, Block B, Lucknow Bench
@@ -392,10 +413,15 @@
     <div style="background: #fff; border-radius: 1.4rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; border: 1px solid #f0e2d0; flex:1;">
       <i class="fas fa-mobile-alt"></i> <strong>Mobile / WhatsApp:</strong> +91 9005017567
     </div>
+    <div style="background: #fff; border-radius: 1.4rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; border: 1px solid #f0e2d0; flex:1;">
+      <i class="fas fa-image"></i> <strong>Official Presence:</strong> Verified Legal Associate
+    </div>
   </div>
+  
+  <!-- Note: photo with exact filename "4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg" is placed above -->
 </div>
 
-<!-- small extra JS for smooth scroll and to show modern interaction -->
+<!-- smooth scroll & interactive fallback handler -->
 <script>
   (function() {
     // smooth scroll for legal query button
@@ -410,7 +436,7 @@
       });
     }
     
-    // optional track but no tracking, just accessibility: set title for external links
+    // set accessibility attributes for WhatsApp & call buttons
     const allWaBtns = document.querySelectorAll('a[href*="wa.me"]');
     allWaBtns.forEach(btn => {
       btn.setAttribute('aria-label', 'Send WhatsApp message to Advocate Shubhanjali Shukla');
@@ -420,128 +446,31 @@
       btn.setAttribute('aria-label', 'Call Advocate Shubhanjali Shukla at 9005017567');
     });
     
-    // tiny dynamic title addition - nothing invasive
-    console.log("Legal Associate Page — High Court Lucknow | Adv. Shubhanjali Shukla Chamber 509");
+    // handle if image fails to load gracefully: fallback already set via onerror + manual check
+    const photoImg = document.querySelector('.advocate-photo');
+    const fallbackDiv = document.getElementById('photoFallback');
+    if (photoImg && fallbackDiv) {
+      // if image already errored before this script (onerror triggers display change)
+      if (!photoImg.complete || photoImg.naturalWidth === 0) {
+        // minor additional check: if image fails to load for any reason
+        photoImg.onerror = function() {
+          photoImg.style.display = 'none';
+          if(fallbackDiv) fallbackDiv.style.display = 'flex';
+        };
+        // if already broken but onerror might have been missed
+        if (photoImg.naturalWidth === 0 && photoImg.src) {
+          photoImg.style.display = 'none';
+          if(fallbackDiv) fallbackDiv.style.display = 'flex';
+        }
+      } else {
+        // if loaded, ensure fallback is hidden
+        fallbackDiv.style.display = 'none';
+      }
+    }
+    
+    // final console info
+    console.log("Legal Associate Page — High Court Lucknow | Adv. Shubhanjali Shukla Chamber 509 | Photo integrated");
   })();
 </script>
-</body>
-</html>
-</div>
-
-<p class="tag">
-Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench. 
-She has successfully completed 5 years of B.A. LL.B., building a strong academic foundation combined with practical legal experience.
-With a client-focused and ethical approach, 
-Advocate Shubhanjali Shukla is committed to providing clear, effective, and result-oriented legal solutions. 
-Her practice emphasizes thorough case analysis, timely advice, and diligent representation to safeguard the rights and interests of her clients.
-She believes in transparency, professionalism, and integrity while handling every matter, whether it involves litigation, legal drafting, or consultation. 
-  Her goal is to make legal processes understandable and accessible, ensuring that clients feel confident and well-represented at every stage of their case.
-Advocate Shubhanjali Shukla continues to serve with dedication at the High Court, Lucknow, striving for justice and excellence in the legal profession.
-</p>
-
-</div>
-
-<div class="right">
-
-<img src="./4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg"
-alt="Advocate">
-
-</div>
-
-</section>
-
-<div class="wave">
-<svg viewBox="0 0 1440 320">
-<path fill="#d4af37"
-d="M0,160L80,176C160,192,320,224,480,224C640,224,800,192,960,181C1120,171,1280,181,1360,186L1440,192L1440,320L0,320Z">
-</path>
-</svg>
-</div>
-
-<section id="practice" class="practice">
-
-<div class="title">PRACTICE AREAS</div>
-
-<div class="practice-line">
-
-<span><i class="fa-solid fa-scale-balanced"></i> Civil Law & Cyber Law</span> |
-<span><i class="fa-solid fa-gavel"></i> Criminal Law</span> |
-<span><i class="fa-solid fa-people-roof"></i> Family & Matrimonial</span> |
-<span><i class="fa-solid fa-house"></i> Public Interest Litigation [PIL] </span> |
-<span><i class="fa-solid fa-file-signature"></i>Arbitration & Mediation </span>
-
-</div>
-
-</section>
-
-<section id="about" class="about">
-
-<div class="title">ABOUT</div>
-
-<div class="about-box">
-
-With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency.
-
-<div class="feature-grid">
-
-<div class="feature">
-<h3>INTEGRITY</h3>
-We uphold the highest standards of integrity and ethics.
-</div>
-
-<div class="feature">
-<h3>DEDICATION</h3>
-Dedicated to providing personalized assistance.
-</div>
-
-<div class="feature">
-<h3>EXPERIENCE</h3>
-Extensive knowledge in legal matters.
-</div>
-
-<div class="feature">
-<h3>CLIENT FOCUSED</h3>
-Committed to professional support.
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer id="contact">
-
-<div class="footer-grid">
-
-<div>
-<h3>RAJAS LEGAL ASSOCIATES</h3>
-Advocates & Legal Consultants
-</div>
-  
-
-<div>
-  
-<h3>CONTACT INFORMATION</h3>
-High Court New Building<br>
-Chamber No. B-509, 4th Floor, Lucknow
-</div>
-
-</div>
-
-<div class="disclaimer">
-This website is intended solely for informational purposes and does not constitute solicitation or legal advertisement.
-</div>
-
-</footer>
-
-<a class="float-call" href="tel:9005017567">
-<i class="fa-solid fa-phone"></i>
-</a>
-
-<a class="float-wa" href="https://wa.me/919005017567">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-
 </body>
 </html>
