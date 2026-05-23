@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Rajas Legal Associate | Adv. Shubhanjali Shukla | High Court Lucknow</title>
+  <title>Rajas Legal Associates | Adv. Shubhanjali Shukla | High Court Lucknow</title>
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
@@ -17,18 +17,17 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      background: #0a0806;
-      background-image: radial-gradient(circle at 25% 40%, rgba(212, 175, 55, 0.08) 0%, #050302 90%);
-      color: #e0d6c8;
+      background: #f5f3ef;
+      color: #2c241e;
       line-height: 1.5;
     }
 
-    /* Navigation - Dark with Gold accents */
+    /* Navigation */
     .navbar {
-      background: #0c0a08;
+      background: #ffffff;
       padding: 0.8rem 2rem;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(212, 175, 55, 0.2);
-      border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+      border-bottom: 1px solid #e8e0d4;
       position: sticky;
       top: 0;
       z-index: 100;
@@ -46,17 +45,13 @@
 
     .logo h2 {
       font-family: 'Merriweather', serif;
-      font-size: 1.45rem;
-      background: linear-gradient(135deg, #e4bc6e, #c7962c);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      letter-spacing: -0.2px;
+      font-size: 1.3rem;
+      color: #8b6946;
+      letter-spacing: -0.3px;
     }
     .logo p {
       font-size: 0.7rem;
-      color: #b8944a;
-      font-weight: 500;
+      color: #a8865a;
     }
 
     .nav-links {
@@ -66,15 +61,15 @@
     }
     .nav-links a {
       text-decoration: none;
-      font-weight: 600;
-      color: #cfc4b2;
+      font-weight: 500;
+      color: #5c4a36;
       transition: 0.2s;
       font-size: 0.95rem;
       cursor: pointer;
     }
     .nav-links a:hover, .nav-links a.active {
-      color: #e4b85e;
-      border-bottom: 2px solid #d4a13e;
+      color: #b87c3a;
+      border-bottom: 2px solid #c9974e;
       padding-bottom: 4px;
     }
 
@@ -83,7 +78,7 @@
       font-size: 1.6rem;
       background: none;
       border: none;
-      color: #e4bc6e;
+      color: #8b6946;
       cursor: pointer;
     }
 
@@ -91,7 +86,6 @@
       max-width: 1280px;
       margin: 0 auto;
       padding: 2rem 1.5rem;
-      min-height: 70vh;
     }
 
     /* Page switching */
@@ -104,22 +98,17 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px);}
+      from { opacity: 0; transform: translateY(8px);}
       to { opacity: 1; transform: translateY(0);}
     }
 
-    /* Cards - Dark with Gold borders */
+    /* Cards */
     .hero-card, .card {
-      background: #0f0d0b;
-      border-radius: 1.8rem;
-      box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 175, 55, 0.2);
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
       overflow: hidden;
-      border: 1px solid rgba(212, 175, 55, 0.25);
-    }
-
-    .gold-accent {
-      height: 5px;
-      background: linear-gradient(90deg, #d4af37, #f5d97f, #b8860b);
+      border: 1px solid #eee5d9;
     }
 
     .profile-flex {
@@ -135,20 +124,19 @@
       text-align: center;
     }
     .photo-container {
-      background: #1a1612;
-      border-radius: 1.5rem;
+      background: #faf6f0;
+      border-radius: 1.2rem;
       padding: 0.6rem;
-      border: 2px solid #d4af37;
-      max-width: 220px;
+      border: 1px solid #e5d5c0;
+      max-width: 200px;
       margin: 0 auto;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
     }
     .advocate-photo {
       width: 100%;
       aspect-ratio: 1/1;
       object-fit: cover;
       border-radius: 1rem;
-      background: #2a241e;
+      background: #ede3d6;
     }
     .info-area {
       flex: 2;
@@ -156,135 +144,104 @@
     h1 {
       font-size: 2rem;
       font-family: 'Merriweather', serif;
-      color: #ecd9ae;
-      letter-spacing: -0.2px;
+      color: #3c2a1f;
     }
-    .firm-name {
-      color: #e2b462;
-      font-size: 1rem;
-      letter-spacing: 1.5px;
-      margin-bottom: 0.25rem;
-      font-weight: 600;
+    .state-member {
+      color: #8b6946;
+      font-size: 0.85rem;
+      margin-top: 0.2rem;
+      font-weight: 500;
     }
-    .legal-tag {
-      color: #dbaa4a;
-      font-weight: 600;
-      border-left: 4px solid #d4af37;
-      padding-left: 0.8rem;
-      margin: 0.5rem 0 1rem;
-    }
-    .chamber-chip {
-      background: #15110e;
+    .chamber-details {
+      background: #fefaf5;
       padding: 0.8rem 1rem;
-      border-radius: 1.2rem;
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      border-radius: 1rem;
       margin: 1rem 0;
-      align-items: center;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-    }
-    .chamber-chip span i {
-      color: #d4af37;
+      border-left: 4px solid #c9974e;
     }
     .btn-group {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      margin: 1.5rem 0;
+      margin: 1.2rem 0;
     }
     .btn {
-      padding: 0.8rem 1.6rem;
+      padding: 0.7rem 1.4rem;
       border-radius: 50px;
       font-weight: 600;
       text-decoration: none;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      transition: 0.25s;
-      cursor: pointer;
+      gap: 8px;
+      transition: 0.2s;
     }
-    .btn-wa { background: #075e54; color: white; border: 1px solid #25D366; }
-    .btn-wa:hover { background: #128C7E; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37,211,102,0.3);}
-    .btn-call { background: #1f1b17; color: #e8c97a; border: 1px solid #d4af37; }
-    .btn-call:hover { background: #2a241e; transform: translateY(-2px); border-color: #f5d97f; color: #f5d97f;}
-    .btn-outline { border: 1.5px solid #d4af37; color: #e8c97a; background: transparent; }
-    .btn-outline:hover { background: rgba(212, 175, 55, 0.1); transform: translateY(-2px);}
+    .btn-wa { background: #25D366; color: white; border: none; }
+    .btn-call { background: #1e2a36; color: white; border: none; }
+    .btn-wa:hover, .btn-call:hover { transform: translateY(-2px); opacity: 0.9;}
 
-    /* practice grid dark */
+    /* Practice Areas Grid */
+    .section-title {
+      font-size: 1.6rem;
+      font-family: 'Merriweather', serif;
+      color: #3c2a1f;
+      margin: 1.5rem 0 1rem;
+      border-left: 5px solid #c9974e;
+      padding-left: 1rem;
+    }
     .practice-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.8rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
     }
-    .practice-card {
-      background: #0f0d0b;
-      border-radius: 1.5rem;
-      padding: 1.8rem;
-      text-align: center;
+    .practice-item {
+      background: #fefcf9;
+      padding: 1rem 1.2rem;
+      border-radius: 1rem;
+      border: 1px solid #eee2d4;
       transition: 0.2s;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      backdrop-filter: blur(2px);
     }
-    .practice-card i {
-      font-size: 2.8rem;
-      color: #e2b462;
-      margin-bottom: 1rem;
-    }
-    .practice-card h3 {
-      color: #ecd9ae;
-    }
-    .practice-card p {
-      color: #b8aa92;
-      font-size: 0.9rem;
-    }
-    .contact-info-card {
-      background: #0f0d0b;
-      border-radius: 1.5rem;
-      padding: 2rem;
-      text-align: center;
-      border: 1px solid rgba(212, 175, 55, 0.4);
-    }
-    .info-row {
-      margin: 1.2rem 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.8rem;
-      flex-wrap: wrap;
-      color: #e0cfb2;
-    }
-    .info-row i {
-      color: #e4bc6e;
+    .practice-item i {
+      color: #c9974e;
+      margin-right: 10px;
       width: 28px;
+    }
+    .practice-item strong {
+      color: #5c3d24;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+    .about-card {
+      background: #fefcf9;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      border: 1px solid #eee2d4;
     }
     .footer-note {
       text-align: center;
       padding: 1.5rem;
-      font-size: 0.8rem;
-      color: #9a8b72;
-      border-top: 1px solid rgba(212, 175, 55, 0.2);
+      font-size: 0.75rem;
+      color: #8a7a68;
+      border-top: 1px solid #e8dfd3;
       margin-top: 2rem;
     }
-    .badge {
-      display: inline-block;
-      background: rgba(212, 175, 55, 0.12);
-      color: #e4bc6e;
-      padding: 0.25rem 0.9rem;
-      border-radius: 40px;
-      font-size: 0.7rem;
-      font-weight: 500;
-      margin-top: 0.6rem;
-      border: 1px solid rgba(212, 175, 55, 0.3);
+    .contact-sidebar {
+      background: #fefaf5;
+      padding: 1.2rem;
+      border-radius: 1rem;
+      margin-top: 1.5rem;
     }
     @media (max-width: 700px) {
-      .nav-links { display: none; width: 100%; flex-direction: column; gap: 0.8rem; padding-top: 1rem; }
+      .nav-links { display: none; width: 100%; flex-direction: column; gap: 0.8rem; }
       .nav-links.show { display: flex; }
       .menu-toggle { display: block; }
-      .profile-flex { padding: 1.5rem; flex-direction: column; }
-      h1 { font-size: 1.6rem; }
-      .btn { padding: 0.6rem 1.2rem; font-size: 0.85rem; }
+      .profile-flex { flex-direction: column; }
     }
   </style>
 </head>
@@ -293,111 +250,150 @@
 <div class="navbar">
   <div class="nav-container">
     <div class="logo">
-      <h2>⚖️ RAJAS LEGAL ASSOCIATE</h2>
-      <p>Adv. Shubhanjali Shukla | High Court Lucknow</p>
+      <h2>⚖️ Rajas Legal Associates</h2>
+      <p>Advocates & Legal Consultants</p>
     </div>
     <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
     <div class="nav-links" id="navLinks">
-      <a class="nav-item active" data-page="home">🏠 Home</a>
-      <a class="nav-item" data-page="practice">⚖️ Practice Areas</a>
-      <a class="nav-item" data-page="contact">📞 Contact</a>
+      <a class="nav-item active" data-page="home">Home</a>
+      <a class="nav-item" data-page="about">About</a>
+      <a class="nav-item" data-page="practice">Practice Areas</a>
+      <a class="nav-item" data-page="contact">Contact</a>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <!-- HOME PAGE -->
+  <!-- HOME PAGE (exactly as image layout) -->
   <div id="home-page" class="page active-page">
     <div class="hero-card">
-      <div class="gold-accent"></div>
       <div class="profile-flex">
         <div class="photo-area">
           <div class="photo-container">
             <img class="advocate-photo" 
-                 src="4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg" 
-                 alt="Adv. Shubhanjali Shukla - Rajas Legal Associate"
-                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML += '<div style=\'padding:1rem;text-align:center\'><i class=\'fas fa-user-graduate\' style=\'font-size:3rem;color:#e4bc6e;\'></i><p style=\'font-size:0.75rem;margin-top:0.5rem;color:#d4af37\'>Adv. Shubhanjali Shukla</p></div>'">
+                 src="5583187D-1E86-4A6C-8B2F-03BA29EE8656.png" 
+                 alt="Adv. Shubhanjali Shukla"
+                 onerror="this.onerror=null; this.style.display='none'; this.parentElement.innerHTML += '<div style=\'padding:1rem\'><i class=\'fas fa-user-circle\' style=\'font-size:3rem;color:#c9974e;\'></i><p>Adv. Shubhanjali Shukla</p></div>'">
           </div>
-          <div class="badge">
-            <i class="fas fa-balance-scale"></i> Legal Associate | Gold Accredited
+          <div class="state-member" style="margin-top: 0.5rem;">
+            <i class="fas fa-check-circle"></i> State Member – State Information Commission, UP
           </div>
         </div>
         <div class="info-area">
-          <div class="firm-name">✨ RAJAS LEGAL ASSOCIATE ✨</div>
-          <h1>Adv. Shubhanjali Shukla</h1>
-          <div class="legal-tag">Criminal & Constitutional Expert | High Court Litigator</div>
-          
-          <div class="chamber-chip">
-            <span><i class="fas fa-building"></i> Chamber 509, 4th Floor, Block B</span>
-            <span><i class="fas fa-gavel"></i> High Court, Lucknow Bench</span>
-            <span><i class="fas fa-map-marker-alt"></i> Lucknow, Uttar Pradesh</span>
+          <h1>Advocate Shubhanjali Shukla</h1>
+          <p style="color: #8b6946; font-weight: 500;">Professional Legal Consultation & Assistance</p>
+          <div class="chamber-details">
+            <i class="fas fa-building"></i> High Court New Building<br>
+            Chamber No. B-509, 4th Floor, Lucknow<br>
+            <i class="fas fa-phone-alt"></i> 9005017567
           </div>
-          
           <div class="btn-group">
-            <a href="https://wa.me/919005017567?text=Hello%20Adv.%20Shubhanjali%2C%20I%20need%20legal%20assistance%20from%20Rajas%20Legal%20Associate." target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+            <a href="https://wa.me/919005017567?text=Hello%20Adv.%20Shubhanjali%2C%20I%20need%20legal%20consultation." target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
             <a href="tel:+919005017567" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
-            <a href="#" class="btn btn-outline" id="contactScrollBtn"><i class="fas fa-calendar-check"></i> Consultation</a>
           </div>
-          <p style="margin-top: 0.8rem; color: #c9bb9d;"><i class="fas fa-quote-left" style="color:#d4af37; margin-right: 6px;"></i> Dedicated legal associate at Lucknow High Court, providing strategic representation in civil, criminal, and constitutional matters. <strong style="color:#e4bc6e;">Chamber 509, Block B, 4th Floor.</strong> Immediate assistance via WhatsApp or Call.</p>
         </div>
       </div>
     </div>
-    <div style="margin-top: 1.8rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between;">
-      <div class="card" style="padding: 1.2rem; flex:1; background:#0f0d0b;"><i class="fas fa-clock" style="color:#d4af37;"></i> Mon–Sat: 10AM – 5PM</div>
-      <div class="card" style="padding: 1.2rem; flex:1; background:#0f0d0b;"><i class="fas fa-mobile-alt" style="color:#d4af37;"></i> +91 9005017567</div>
-      <div class="card" style="padding: 1.2rem; flex:1; background:#0f0d0b;"><i class="fas fa-envelope" style="color:#d4af37;"></i> rajaslegal@highcourt.in</div>
+
+    <!-- Practice Areas section exactly as image -->
+    <div class="section-title"><i class="fas fa-gavel"></i> PRACTICE AREAS</div>
+    <div class="practice-grid">
+      <div class="practice-item"><i class="fas fa-file-contract"></i> <strong>CIVIL MATTERS</strong><br>Representation and advice in all types of civil disputes.</div>
+      <div class="practice-item"><i class="fas fa-gavel"></i> <strong>CRIMINAL MATTERS</strong><br>Effective representation in criminal cases and proceedings.</div>
+      <div class="practice-item"><i class="fas fa-heart"></i> <strong>FAMILY & MATRIMONIAL MATTERS</strong><br>Divorce, maintenance, custody, and all family related legal matters.</div>
+      <div class="practice-item"><i class="fas fa-home"></i> <strong>PROPERTY DISPUTES</strong><br>Property registration, disputes, partition, sale, purchase & possession matters.</div>
+      <div class="practice-item"><i class="fas fa-file-signature"></i> <strong>DOCUMENTATION & AFFIDAVITS</strong><br>Drafting, vetting and preparation of all types of documents & affidavits.</div>
+      <div class="practice-item"><i class="fas fa-comments"></i> <strong>LEGAL CONSULTATION</strong><br>Providing effective legal advice and solutions.</div>
+    </div>
+
+    <!-- About preview -->
+    <div class="section-title"><i class="fas fa-info-circle"></i> ABOUT</div>
+    <div class="card" style="padding: 1.5rem;">
+      <p>With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.</p>
+      <div class="about-grid">
+        <div class="about-card"><i class="fas fa-shield-alt" style="color:#c9974e;"></i><br><strong>INTEGRITY</strong><br>Highest standards of integrity</div>
+        <div class="about-card"><i class="fas fa-heart" style="color:#c9974e;"></i><br><strong>DEDICATION</strong><br>Personalized service</div>
+        <div class="about-card"><i class="fas fa-chart-line" style="color:#c9974e;"></i><br><strong>EXPERIENCE</strong><br>Extensive legal knowledge</div>
+        <div class="about-card"><i class="fas fa-users" style="color:#c9974e;"></i><br><strong>CLIENT FOCUSED</strong><br>Best outcomes for clients</div>
+      </div>
+    </div>
+
+    <!-- Quick Links + Contact + Consultation (exactly as image footer area) -->
+    <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 2rem;">
+      <div class="card" style="flex:1; padding: 1.2rem;">
+        <h3><i class="fas fa-link"></i> QUICK LINKS</h3>
+        <ul style="list-style: none; margin-top: 0.8rem;">
+          <li>🏠 Home</li><li>📖 About</li><li>⚖️ Practice Areas</li><li>📌 Services</li><li>📞 Contact</li>
+        </ul>
+      </div>
+      <div class="card" style="flex:1; padding: 1.2rem;">
+        <h3><i class="fas fa-address-card"></i> CONTACT INFORMATION</h3>
+        <p><i class="fas fa-building"></i> High Court New Building<br>Chamber No. B-509, 4th Floor, Lucknow</p>
+        <p><i class="fas fa-phone-alt"></i> 9005017567</p>
+        <p><i class="fas fa-calendar-alt"></i> Available on Request</p>
+      </div>
+      <div class="card" style="flex:1; padding: 1.2rem;">
+        <h3><i class="fas fa-handshake"></i> CONSULTATION</h3>
+        <p>Schedule an appointment for your consultation and assistance.</p>
+        <a href="https://wa.me/919005017567" class="btn btn-wa" style="margin-top: 0.8rem; display: inline-block;">Book via WhatsApp</a>
+      </div>
     </div>
   </div>
 
-  <!-- PRACTICE AREAS PAGE -->
+  <!-- ABOUT PAGE -->
+  <div id="about-page" class="page">
+    <div class="card" style="padding: 2rem;">
+      <h2>About Adv. Shubhanjali Shukla</h2>
+      <p style="margin-top: 1rem;">With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.</p>
+      <div class="about-grid" style="margin-top: 1.5rem;">
+        <div class="about-card"><i class="fas fa-shield-alt"></i><br><strong>INTEGRITY</strong><br>We uphold highest standards of integrity and ethics.</div>
+        <div class="about-card"><i class="fas fa-heart"></i><br><strong>DEDICATION</strong><br>Dedicated to providing personalized and result-driven services.</div>
+        <div class="about-card"><i class="fas fa-chart-line"></i><br><strong>EXPERIENCE</strong><br>Extensive knowledge and experience in various legal matters.</div>
+        <div class="about-card"><i class="fas fa-users"></i><br><strong>CLIENT FOCUSED</strong><br>Committed to achieving the best outcomes for our clients.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRACTICE PAGE (detailed) -->
   <div id="practice-page" class="page">
     <div class="card" style="padding: 2rem;">
-      <h2 style="font-family: 'Merriweather'; color: #e4bc6e;"><i class="fas fa-gavel"></i> Expertise at Rajas Legal Associate</h2>
-      <p style="margin-top:0.5rem; color:#c9bb9d;">Advocate Shubhanjali Shukla offers comprehensive legal services before Lucknow High Court and subordinate courts.</p>
+      <h2>Our Practice Areas</h2>
       <div class="practice-grid">
-        <div class="practice-card"><i class="fas fa-balance-scale"></i><h3>Criminal Defense</h3><p>Bail, anticipatory bail, criminal trials, and high-stakes litigation.</p></div>
-        <div class="practice-card"><i class="fas fa-hand-holding-heart"></i><h3>Matrimonial & Family</h3><p>Divorce, custody, maintenance, domestic violence cases.</p></div>
-        <div class="practice-card"><i class="fas fa-file-contract"></i><h3>Civil Litigation</h3><p>Property disputes, recovery suits, injunctions, arbitration.</p></div>
-        <div class="practice-card"><i class="fas fa-university"></i><h3>Constitutional</h3><p>Writ petitions, public interest litigation, service matters.</p></div>
-        <div class="practice-card"><i class="fas fa-building"></i><h3>Corporate Advisory</h3><p>Legal notices, contract drafting, negotiation, NCLT matters.</p></div>
-        <div class="practice-card"><i class="fas fa-shield-alt"></i><h3>Client Confidentiality</h3><p>Strict ethical standards & personalized case strategies.</p></div>
-      </div>
-      <div class="btn-group" style="justify-content: center; margin-top: 2rem;">
-        <a href="https://wa.me/919005017567?text=I%20need%20expert%20legal%20advice%20from%20Rajas%20Legal%20Associate" class="btn btn-wa"><i class="fab fa-whatsapp"></i> Discuss Your Case</a>
-        <a href="tel:+919005017567" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call for Appointment</a>
+        <div class="practice-item"><strong>CIVIL MATTERS</strong><br>Representation and advice in all types of civil disputes.</div>
+        <div class="practice-item"><strong>CRIMINAL MATTERS</strong><br>Effective representation in criminal cases and proceedings.</div>
+        <div class="practice-item"><strong>FAMILY & MATRIMONIAL</strong><br>Divorce, maintenance, custody, and all family related legal matters.</div>
+        <div class="practice-item"><strong>PROPERTY DISPUTES</strong><br>Property registration, disputes, partition, sale, purchase & possession matters.</div>
+        <div class="practice-item"><strong>DOCUMENTATION & AFFIDAVITS</strong><br>Drafting, vetting and preparation of all types of documents & affidavits.</div>
+        <div class="practice-item"><strong>LEGAL CONSULTATION</strong><br>Providing effective legal advice and solutions.</div>
       </div>
     </div>
   </div>
 
   <!-- CONTACT PAGE -->
   <div id="contact-page" class="page">
-    <div class="contact-info-card">
-      <h2 style="color:#e4bc6e;"><i class="fas fa-address-card"></i> Reach Advocate Shubhanjali Shukla</h2>
-      <p style="margin: 0.8rem 0; color:#cfc3ab;">📍 <strong style="color:#e2b462;">Rajas Legal Associate</strong> — High Court Chamber 509, 4th Floor, Block B, Lucknow Bench</p>
-      <div class="info-row"><i class="fas fa-phone-alt"></i> <strong>Mobile:</strong> +91 9005017567</div>
-      <div class="info-row"><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +91 9005017567</div>
-      <div class="info-row"><i class="fas fa-envelope"></i> <strong>Email:</strong> rajaslegal@highcourt.in</div>
-      <div class="info-row"><i class="fas fa-clock"></i> <strong>Chamber Hours:</strong> 10:00 AM – 5:00 PM (Monday to Saturday)</div>
-      <div class="btn-group" style="justify-content: center; margin-top: 1.5rem;">
-        <a href="https://wa.me/919005017567?text=Respected%20Ma'am%2C%20I%20want%20to%20schedule%20a%20consultation%20at%20your%20chamber%20509." class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
-        <a href="tel:+919005017567" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
-      </div>
-      <div style="margin-top: 1.5rem; background:#15110e; border-radius:1rem; padding:1rem; border:1px solid rgba(212,175,55,0.3);">
-        <i class="fas fa-map-pin" style="color:#e4bc6e;"></i> <strong style="color:#e2b462;">Chamber Location:</strong> Chamber No. 509, Block B, 4th Floor, High Court Compound, Lucknow (Uttar Pradesh) – Near Gate No. 2
+    <div class="card" style="padding: 2rem;">
+      <h2>Contact Us</h2>
+      <p><strong>Advocate Shubhanjali Shukla</strong></p>
+      <p><i class="fas fa-building"></i> High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</p>
+      <p><i class="fas fa-phone-alt"></i> 9005017567</p>
+      <p><i class="fab fa-whatsapp"></i> WhatsApp: 9005017567</p>
+      <div class="btn-group" style="margin-top: 1rem;">
+        <a href="https://wa.me/919005017567" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="tel:+919005017567" class="btn btn-call"><i class="fas fa-phone-alt"></i> Call</a>
       </div>
     </div>
   </div>
 
   <div class="footer-note">
-    <i class="fas fa-gavel" style="color:#d4af37;"></i> Rajas Legal Associate | Advocate Shubhanjali Shukla | High Court Lucknow Chamber 509<br>
-    © 2026 | Prior appointment preferred | Call / WhatsApp for urgent legal assistance
+    © 2024 Rajesh Legal Associates. All Rights Reserved.<br>
+    This website is intended solely for informational purposes and does not constitute solicitation or legal advertisement.
   </div>
 </div>
 
 <script>
-  // Page navigation + smooth behavior
   const pages = {
     home: document.getElementById('home-page'),
+    about: document.getElementById('about-page'),
     practice: document.getElementById('practice-page'),
     contact: document.getElementById('contact-page')
   };
@@ -405,18 +401,12 @@
   const navItems = document.querySelectorAll('.nav-item');
   
   function activatePage(pageId) {
-    Object.keys(pages).forEach(key => {
-      pages[key].classList.remove('active-page');
-    });
+    Object.keys(pages).forEach(key => pages[key].classList.remove('active-page'));
     pages[pageId].classList.add('active-page');
-    
     navItems.forEach(item => {
       item.classList.remove('active');
-      if(item.getAttribute('data-page') === pageId) {
-        item.classList.add('active');
-      }
+      if(item.getAttribute('data-page') === pageId) item.classList.add('active');
     });
-    
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   
@@ -425,33 +415,16 @@
       e.preventDefault();
       const page = item.getAttribute('data-page');
       if(page === 'home') activatePage('home');
+      else if(page === 'about') activatePage('about');
       else if(page === 'practice') activatePage('practice');
       else if(page === 'contact') activatePage('contact');
-      
-      const navLinks = document.getElementById('navLinks');
-      if(navLinks.classList.contains('show')) {
-        navLinks.classList.remove('show');
-      }
+      document.getElementById('navLinks')?.classList.remove('show');
     });
   });
   
-  const menuToggle = document.getElementById('menuToggle');
-  const navLinksDiv = document.getElementById('navLinks');
-  if(menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      navLinksDiv.classList.toggle('show');
-    });
-  }
-  
-  const contactScrollBtn = document.getElementById('contactScrollBtn');
-  if(contactScrollBtn) {
-    contactScrollBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      activatePage('contact');
-    });
-  }
-  
-  console.log("Rajas Legal Associate | Dark Theme Gold | Adv. Shubhanjali Shukla | Chamber 509 | +919005017567");
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.getElementById('navLinks')?.classList.toggle('show');
+  });
 </script>
 </body>
 </html>
