@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rajas Legal Associates | Adv. Shubhanjali Shukla</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 
@@ -18,41 +19,44 @@ scroll-behavior:smooth;
 
 body{
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
-color:white;
+background:
+radial-gradient(circle at top right, rgba(212,175,55,.15), transparent 25%),
+linear-gradient(135deg,#090909,#111,#1a1a1a);
+color:#f5f1e8;
 }
 
 .navbar{
 position:sticky;
 top:0;
-z-index:999;
-background:rgba(15,23,42,.95);
-backdrop-filter:blur(12px);
-padding:15px;
-border-bottom:1px solid rgba(212,175,55,.3);
+z-index:1000;
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+padding:18px;
+border-bottom:1px solid rgba(212,175,55,.25);
+box-shadow:0 5px 20px rgba(212,175,55,.1);
 }
 
 .nav-container{
+max-width:1200px;
+margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-max-width:1200px;
-margin:auto;
 }
 
 .logo h2{
 color:#D4AF37;
-font-size:22px;
+font-size:24px;
 }
 
 .logo p{
 font-size:12px;
-color:#ccc;
+color:#d8d1c7;
 }
 
 .nav-links a{
-color:white;
-margin-left:25px;
+color:#f5f1e8;
+margin-left:20px;
 text-decoration:none;
 }
 
@@ -63,24 +67,40 @@ padding:25px;
 }
 
 .hero{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(20px);
-border:1px solid rgba(212,175,55,.2);
-border-radius:25px;
-padding:30px;
 display:flex;
 flex-wrap:wrap;
-gap:30px;
+gap:40px;
 align-items:center;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
+padding:40px;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.03),
+rgba(255,255,255,.06)
+);
+
+border-radius:35px;
+border:1px solid rgba(212,175,55,.2);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.4),
+0 0 30px rgba(212,175,55,.08);
+}
+
+.photo{
+text-align:center;
 }
 
 .photo img{
-width:220px;
-height:220px;
+width:250px;
+height:250px;
+border-radius:30px;
 object-fit:cover;
-border-radius:20px;
-border:3px solid #D4AF37;
+border:4px solid #D4AF37;
+
+box-shadow:
+0 0 30px rgba(212,175,55,.5);
 }
 
 .info{
@@ -88,34 +108,35 @@ flex:1;
 }
 
 .info h1{
-font-size:38px;
+font-size:42px;
 color:#D4AF37;
 margin-bottom:10px;
 }
 
 .tag{
 color:#ddd;
-margin-bottom:20px;
+font-size:18px;
 }
 
 .chamber{
-background:#182234;
-padding:15px;
+margin-top:25px;
+background:#171717;
+padding:18px;
 border-left:5px solid #D4AF37;
-border-radius:10px;
-margin:20px 0;
+border-radius:15px;
 }
 
 .btns{
 display:flex;
 gap:15px;
+margin-top:25px;
 flex-wrap:wrap;
 }
 
 .btn{
 padding:14px 25px;
-border-radius:50px;
 text-decoration:none;
+border-radius:50px;
 font-weight:bold;
 }
 
@@ -130,42 +151,106 @@ color:black;
 }
 
 .section-title{
-font-size:30px;
-margin:50px 0 25px;
+font-size:32px;
+margin:60px 0 25px;
 color:#D4AF37;
-border-left:5px solid #D4AF37;
 padding-left:15px;
+border-left:5px solid #D4AF37;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
+grid-template-columns:
+repeat(auto-fit,minmax(270px,1fr));
+
+gap:25px;
 }
 
 .card{
-background:#172033;
-padding:20px;
-border-radius:18px;
-border:1px solid rgba(212,175,55,.2);
-transition:.3s;
+
+position:relative;
+
+padding:28px;
+
+overflow:hidden;
+
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.03),
+rgba(255,255,255,.05)
+);
+
+border-radius:
+35px 10px 35px 10px;
+
+border:
+1px solid rgba(212,175,55,.18);
+
+transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-8px);
 }
 
+.card:before{
+
+content:'';
+
+position:absolute;
+
+width:180px;
+height:180px;
+
+top:-60px;
+right:-60px;
+
+border-radius:50%;
+
+border:
+2px solid rgba(212,175,55,.10);
+
+}
+
+.card:after{
+
+content:'';
+
+position:absolute;
+
+width:120px;
+height:120px;
+
+left:-40px;
+bottom:-40px;
+
+border-radius:50%;
+
+border:
+2px solid rgba(212,175,55,.08);
+
+}
+
 .card i{
-font-size:30px;
+
+font-size:35px;
 color:#D4AF37;
+
 margin-bottom:15px;
 }
 
+.card h3{
+margin-bottom:10px;
+}
+
 .footer{
-margin-top:60px;
-padding:25px;
+margin-top:50px;
+padding:30px;
 text-align:center;
-border-top:1px solid rgba(212,175,55,.3);
+border-top:
+1px solid rgba(212,175,55,.2);
+
 color:#bbb;
 }
 
@@ -175,13 +260,17 @@ color:#bbb;
 text-align:center;
 }
 
-.info h1{
-font-size:28px;
+.photo img{
+width:180px;
+height:180px;
 }
 
-.photo img{
-width:170px;
-height:170px;
+.info h1{
+font-size:30px;
+}
+
+.nav-links{
+display:none;
 }
 
 }
@@ -192,6 +281,7 @@ height:170px;
 <body>
 
 <nav class="navbar">
+
 <div class="nav-container">
 
 <div class="logo">
@@ -200,13 +290,19 @@ height:170px;
 </div>
 
 <div class="nav-links">
-<a href="#about">About</a>
+
 <a href="#services">Services</a>
+
+<a href="#about">About</a>
+
 <a href="#contact">Contact</a>
+
 </div>
 
 </div>
+
 </nav>
+
 
 <div class="container">
 
@@ -214,7 +310,7 @@ height:170px;
 
 <div class="photo">
 
-<img src="5583187D-1E86-4A6C-8B2F-03BA29EE8656.png">
+<img src="4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg">
 
 </div>
 
@@ -229,9 +325,9 @@ State Member – State Information Commission Uttar Pradesh
 <div class="chamber">
 
 📍 High Court New Building<br>
-Chamber No B-509 4th Floor Lucknow<br><br>
+Chamber No B-509, 4th Floor Lucknow<br><br>
 
-📞 9005017567
+📞 +91 9005017567
 
 </div>
 
@@ -239,12 +335,16 @@ Chamber No B-509 4th Floor Lucknow<br><br>
 
 <a class="btn whatsapp"
 href="https://wa.me/919005017567">
+
 WhatsApp
+
 </a>
 
 <a class="btn call"
-href="tel:9005017567">
+href="tel:+919005017567">
+
 Call Now
+
 </a>
 
 </div>
@@ -257,45 +357,45 @@ Call Now
 <section id="services">
 
 <h2 class="section-title">
-Practice Areas
+⚖ Practice Areas
 </h2>
 
 <div class="grid">
 
 <div class="card">
-<i class="fas fa-gavel"></i>
+<i class="fas fa-scale-balanced"></i>
 <h3>Civil Matters</h3>
-<p>All civil disputes and representation.</p>
+<p>Representation in civil legal matters.</p>
 </div>
 
 <div class="card">
-<i class="fas fa-scale-balanced"></i>
+<i class="fas fa-gavel"></i>
 <h3>Criminal Matters</h3>
-<p>Legal representation in criminal cases.</p>
+<p>Professional criminal case handling.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-house"></i>
 <h3>Property Disputes</h3>
-<p>Registration, disputes and legal work.</p>
-</div>
-
-<div class="card">
-<i class="fas fa-file-signature"></i>
-<h3>Documentation</h3>
-<p>Affidavit drafting and legal documents.</p>
+<p>Registration and dispute solutions.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-heart"></i>
 <h3>Family Matters</h3>
-<p>Divorce, custody and family issues.</p>
+<p>Divorce and custody legal support.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-file-signature"></i>
+<h3>Documentation</h3>
+<p>Drafting legal documents.</p>
 </div>
 
 <div class="card">
 <i class="fas fa-comments"></i>
 <h3>Consultation</h3>
-<p>Professional legal advice.</p>
+<p>Professional legal consultation.</p>
 </div>
 
 </div>
@@ -310,12 +410,11 @@ About Us
 
 <div class="card">
 
-Rajas Legal Associates provides dedicated legal consultation with professionalism, integrity and transparency.
+Rajas Legal Associates provides dedicated legal consultation with integrity, professionalism and transparency.
 
 </div>
 
 </section>
-
 
 <section id="contact">
 
@@ -325,22 +424,17 @@ Contact
 
 <div class="card">
 
-📍 High Court New Building Lucknow<br><br>
+📍 Lucknow High Court New Building<br><br>
 
-📞 9005017567<br><br>
-
-Available by appointment
+📞 +91 9005017567
 
 </div>
 
 </section>
 
-
 <div class="footer">
 
-© 2026 Rajas Legal Associates<br>
-
-This website is for informational purposes only.
+© 2026 Rajas Legal Associates
 
 </div>
 
