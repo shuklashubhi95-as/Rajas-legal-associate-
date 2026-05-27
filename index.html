@@ -6,20 +6,12 @@
 
 <title>Rajas Legal Associates</title>
 
-<!-- SEO -->
 <meta name="description" content="Rajas Legal Associates - Advocate Shubhanjali Shukla, High Court Lucknow. Criminal, Civil, Family, Cyber Law services.">
-<meta name="keywords" content="Advocate Lucknow, High Court Lawyer, Civil Law, Criminal Lawyer Lucknow, Legal Services UP">
+<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Civil Law, Criminal Lawyer Lucknow, Legal Services UP">
 <meta name="author" content="Rajas Legal Associates">
+<meta name="robots" content="index, follow">
 
-<.content{
-max-width:600px;
-z-index:2;
-position:relative;
-
-/*  */
-margin-right:auto;
-text-align:left;
-}
+<style>
 *{
 margin:0;
 padding:0;
@@ -27,6 +19,7 @@ box-sizing:border-box;
 font-family:Arial,sans-serif;
 scroll-behavior:smooth;
 }
+
 body{
 background:#0a0a0a;
 color:white;
@@ -64,28 +57,53 @@ font-weight:bold;
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.8)),
-url("cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg");
+linear-gradient(to right, rgba(0,0,0,.80) 30%, rgba(0,0,0,.25) 70%),
+url("hero.jpg");
+
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
-padding:8%;
+justify-content:center;
+
+position:relative;
+filter:contrast(1.1) saturate(1.1) brightness(0.95);
 }
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+box-shadow: inset 0 0 120px rgba(0,0,0,0.6);
+}
+
 .content{
-max-width:650px;
+max-width:600px;
 margin-top:80px;
+z-index:2;
+position:relative;
+text-align:left;
 }
+
 .heading{
 font-size:60px;
 line-height:1.1;
 }
-.gold{color:#d4af37;}
+
+.gold{
+color:#d4af37;
+}
+
 .sub{
 font-size:18px;
 margin-top:15px;
 color:#ddd;
+max-width:450px;
 }
+
 .btn{
 display:inline-block;
 margin-top:20px;
@@ -102,12 +120,14 @@ font-weight:bold;
 padding:80px 10%;
 background:#111;
 }
+
 .title{
 font-size:38px;
 color:#d4af37;
 margin-bottom:25px;
 }
 
+/* ABOUT */
 .about{
 background:#1b1b1b;
 padding:30px;
@@ -127,6 +147,7 @@ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
 margin-top:25px;
 }
+
 .card{
 background:#1b1b1b;
 padding:25px;
@@ -134,58 +155,13 @@ border-radius:15px;
 text-align:center;
 border:1px solid #2a2a2a;
 }
+
 .card:hover{
 transform:translateY(-8px);
 transition:0.3s;
 }
 
-/* ADDRESS */
-.address-box{
-margin-top:25px;
-background:#1b1b1b;
-padding:25px;
-border-radius:15px;
-border-left:4px solid #d4af37;
-line-height:1.7;
-}
-
-/* BUTTONS */
-.action-btns{
-display:flex;
-gap:15px;
-margin-top:15px;
-flex-wrap:wrap;
-}
-.call-btn{
-background:#d4af37;
-color:black;
-padding:12px 22px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-.whatsapp-btn{
-background:#25D366;
-color:white;
-padding:12px 22px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* MAP */
-.map{
-margin-top:20px;
-border-radius:15px;
-overflow:hidden;
-}
-.map iframe{
-width:100%;
-height:280px;
-border:0;
-}
-
-/* APPOINTMENT */
+/* FORM */
 input, textarea{
 width:100%;
 padding:12px;
@@ -204,6 +180,29 @@ font-weight:bold;
 cursor:pointer;
 }
 
+/* ADDRESS */
+.address-box{
+margin-top:25px;
+background:#1b1b1b;
+padding:25px;
+border-radius:15px;
+border-left:4px solid #d4af37;
+line-height:1.7;
+}
+
+/* MAP */
+.map{
+margin-top:20px;
+border-radius:15px;
+overflow:hidden;
+}
+
+.map iframe{
+width:100%;
+height:280px;
+border:0;
+}
+
 /* STICKY BAR */
 .sticky-bar{
 position:fixed;
@@ -213,6 +212,7 @@ width:100%;
 display:flex;
 z-index:1000;
 }
+
 .sticky-bar a{
 flex:1;
 text-align:center;
@@ -221,9 +221,15 @@ text-decoration:none;
 font-weight:bold;
 color:white;
 }
-.call{background:#d4af37;color:black;}
-.wa{background:#25D366;}
-.dir{background:#1e88e5;}
+
+.call{
+background:#d4af37;
+color:black;
+}
+
+.dir{
+background:#1e88e5;
+}
 
 </style>
 </head>
@@ -254,15 +260,10 @@ Advocate Shubhanjali Shukla - High Court Lucknow Bench Legal Services
 <h2 class="title">Know Your Advocate</h2>
 
 <div class="about">
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon’ble High Court, Lucknow Bench. She handles Criminal, Civil, Family, Cyber Law, PIL and Arbitration matters with strong legal expertise.
 
-Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench.  And also State member of  State Information Commission Uttar Pradesh. 
-She has successfully completed 5 years of B.A. LL.B., building a strong academic foundation combined with practical legal experience.
-With a client-focused and ethical approach,
- Advocate Shubhanjali Shukla is committed to providing clear, effective, and result-oriented legal solutions. Her practice emphasizes thorough case analysis, timely advice, and diligent representation to safeguard the rights and interests of her clients.
-She believes in transparency, professionalism, and integrity while handling every matter, whether it involves litigation, legal drafting, or consultation. Her goal is to make legal processes understandable and accessible, ensuring that clients feel confident and well-represented at every stage of their case.
-Advocate Shubhanjali Shukla continues to serve with dedication at the High Court, Lucknow, striving for justice and excellence in the legal profession.
 <div class="member">
-🎗 State Member – State Information Commission Uttar Pradesh
+🎗 State Member – State Information Commission, Uttar Pradesh
 </div>
 </div>
 </section>
@@ -280,7 +281,7 @@ Advocate Shubhanjali Shukla continues to serve with dedication at the High Court
 <div class="card">🤝 Arbitration</div>
 </div>
 
-<!-- APPOINTMENT -->
+<!-- FORM -->
 <h2 class="title">Book Appointment</h2>
 
 <form onsubmit="sendWA(); return false;">
@@ -292,23 +293,17 @@ Advocate Shubhanjali Shukla continues to serve with dedication at the High Court
 
 <!-- ADDRESS -->
 <div class="address-box">
-  
+
 <strong>📍 Address:</strong><br>
 New building, 4th floor, B Block<br>
 Chamber No: 509<br>
 High Court Gomti Nagar, Lucknow
 
-
-
-  <!-- MAP -->
 <div class="map">
-
-  <iframe src="https://www.google.com/maps?q=High+Court+Gomti+Nagar+Lucknow&output=embed"></iframe>
-
+<iframe src="https://www.google.com/maps?q=High+Court+Gomti+Nagar+Lucknow&output=embed"></iframe>
 </div>
 
 </div>
-
 </section>
 
 <!-- STICKY BAR -->
@@ -325,9 +320,10 @@ let phone=document.getElementById("phone").value;
 let msg=document.getElementById("msg").value;
 
 let url="https://wa.me/919005017567?text="
++"👋 Hello Rajas Legal Associates%0a%0a"
 +"Name: "+name+"%0a"
 +"Phone: "+phone+"%0a"
-+"Message: "+msg;
++"Issue: "+msg;
 
 window.open(url,"_blank");
 }
