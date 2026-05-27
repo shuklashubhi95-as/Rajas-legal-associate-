@@ -6,11 +6,6 @@
 
 <title>Rajas Legal Associates</title>
 
-<meta name="description" content="Rajas Legal Associates - Advocate Shubhanjali Shukla, High Court Lucknow. Criminal, Civil, Family, Cyber Law services.">
-<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Civil Law, Criminal Lawyer Lucknow, Legal Services UP">
-<meta name="author" content="Rajas Legal Associates">
-<meta name="robots" content="index, follow">
-
 <style>
 *{
 margin:0;
@@ -55,56 +50,73 @@ color:white;
 font-weight:bold;
 }
 
-/* HERO WITH IMAGE */
+/* HERO */
 .hero{
 height:100vh;
 background:
-linear-gradient(to right, rgba(0,0,0,.80), rgba(0,0,0,.30)),
+linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.30)),
 url("cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg");
 
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
-
 display:flex;
 align-items:center;
-justify-content:flex-start;
 padding-left:8%;
-
-position:relative;
-}
-
-.content{
-max-width:550px;
-z-index:2;
-position:relative;
-text-align:left;
 }
 
 .heading{
-font-size:60px;
-line-height:1.1;
+font-size:42px;   /* छोटा किया */
+line-height:1.2;
+max-width:450px;
 }
 
-.gold{
-color:#d4af37;
-}
+.gold{ color:#d4af37; }
 
 .sub{
-font-size:18px;
-margin-top:15px;
+font-size:14px;   /* छोटा किया */
+margin-top:10px;
 color:#ddd;
+max-width:400px;
 }
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:14px 30px;
+margin-top:15px;
+padding:12px 25px;
 background:#d4af37;
 color:black;
 border-radius:30px;
 text-decoration:none;
 font-weight:bold;
+}
+
+/* ACCORDION (KNOW YOUR ADVOCATE) */
+.accordion{
+width:90%;
+margin:90px auto 20px;
+background:#1b1b1b;
+border-radius:15px;
+overflow:hidden;
+}
+
+.accordion-header{
+padding:18px;
+background:#111;
+cursor:pointer;
+font-size:20px;
+color:#d4af37;
+font-weight:bold;
+}
+
+.accordion-content{
+display:none;
+padding:20px;
+line-height:1.7;
+}
+
+.member{
+margin-top:10px;
+color:#d4af37;
 }
 
 /* SECTIONS */
@@ -117,19 +129,6 @@ background:#111;
 font-size:38px;
 color:#d4af37;
 margin-bottom:25px;
-}
-
-/* ABOUT */
-.about{
-background:#1b1b1b;
-padding:30px;
-border-radius:20px;
-line-height:1.8;
-}
-
-.member{
-margin-top:15px;
-color:#d4af37;
 }
 
 /* CARDS */
@@ -148,11 +147,6 @@ text-align:center;
 border:1px solid #2a2a2a;
 }
 
-.card:hover{
-transform:translateY(-8px);
-transition:0.3s;
-}
-
 /* FORM */
 input, textarea{
 width:100%;
@@ -162,16 +156,6 @@ border-radius:10px;
 border:none;
 }
 
-button{
-background:#25D366;
-color:white;
-padding:12px 20px;
-border:none;
-border-radius:30px;
-font-weight:bold;
-cursor:pointer;
-}
-
 /* ADDRESS */
 .address-box{
 margin-top:25px;
@@ -179,30 +163,15 @@ background:#1b1b1b;
 padding:25px;
 border-radius:15px;
 border-left:4px solid #d4af37;
-line-height:1.7;
 }
 
-/* MAP */
-.map{
-margin-top:20px;
-border-radius:15px;
-overflow:hidden;
-}
-
-.map iframe{
-width:100%;
-height:280px;
-border:0;
-}
-
-/* STICKY BAR */
+/* STICKY */
 .sticky-bar{
 position:fixed;
 bottom:0;
 left:0;
 width:100%;
 display:flex;
-z-index:1000;
 }
 
 .sticky-bar a{
@@ -214,15 +183,8 @@ font-weight:bold;
 color:white;
 }
 
-.call{
-background:#d4af37;
-color:black;
-}
-
-.dir{
-background:#1e88e5;
-}
-
+.call{background:#d4af37;color:black;}
+.dir{background:#1e88e5;}
 </style>
 </head>
 
@@ -236,32 +198,33 @@ background:#1e88e5;
 
 <!-- HERO -->
 <section class="hero">
-<div class="content">
+<div>
 <div class="heading">
 Protect Your <span class="gold">Rights</span>
 </div>
 <p class="sub">
 Advocate Shubhanjali Shukla - High Court Lucknow Bench Legal Services
 </p>
-<a href="#about" class="btn">Book Consultation</a>
+<a href="#practice" class="btn">Book Consultation</a>
 </div>
 </section>
 
-<!-- ABOUT -->
-<section class="section" id="about">
-<h2 class="title">Know Your Advocate</h2>
-
-<div class="about">
-Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon’ble High Court, Lucknow Bench. She handles Criminal, Civil, Family, Cyber Law, PIL and Arbitration matters with strong legal expertise.
+<!-- ACCORDION SECTION (TOP) -->
+<div class="accordion">
+<div class="accordion-header" onclick="toggleAcc()">
+🎗 Know Your Advocate ▼
+</div>
+<div class="accordion-content" id="accContent">
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon’ble High Court, Lucknow Bench. She handles Criminal, Civil, Family, Cyber Law, PIL and Arbitration matters.
 
 <div class="member">
 🎗 State Member – State Information Commission, Uttar Pradesh
 </div>
 </div>
-</section>
+</div>
 
 <!-- PRACTICE -->
-<section class="section">
+<section class="section" id="practice">
 <h2 class="title">Practice Areas</h2>
 
 <div class="cards">
@@ -273,7 +236,6 @@ Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the 
 <div class="card">🤝 Arbitration</div>
 </div>
 
-<!-- FORM -->
 <h2 class="title">Book Appointment</h2>
 
 <form onsubmit="sendWA(); return false;">
@@ -283,28 +245,18 @@ Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the 
 <button type="submit">Send on WhatsApp</button>
 </form>
 
-<!-- ADDRESS -->
 <div class="address-box">
-
 <strong>📍 Address:</strong><br>
-New building, 4th floor, B Block<br>
-Chamber No: 509<br>
-High Court Gomti Nagar, Lucknow
-
-<div class="map">
-<iframe src="https://www.google.com/maps?q=High+Court+Gomti+Nagar+Lucknow&output=embed"></iframe>
-</div>
-
+Chamber No: 509, High Court Lucknow
 </div>
 </section>
 
 <!-- STICKY BAR -->
 <div class="sticky-bar">
 <a class="call" href="tel:+919005017567">📞 Call</a>
-<a class="dir" href="https://www.google.com/maps/search/?api=1&query=High+Court+Gomti+Nagar+Lucknow">📍 Directions</a>
+<a class="dir" href="https://www.google.com/maps/search/?api=1&query=High+Court+Lucknow">📍 Directions</a>
 </div>
 
-<!-- JS -->
 <script>
 function sendWA(){
 let name=document.getElementById("name").value;
@@ -312,12 +264,16 @@ let phone=document.getElementById("phone").value;
 let msg=document.getElementById("msg").value;
 
 let url="https://wa.me/919005017567?text="
-+"👋 Hello Rajas Legal Associates%0a%0a"
 +"Name: "+name+"%0a"
 +"Phone: "+phone+"%0a"
 +"Issue: "+msg;
 
 window.open(url,"_blank");
+}
+
+function toggleAcc(){
+let box=document.getElementById("accContent");
+box.style.display = (box.style.display==="block") ? "none" : "block";
 }
 </script>
 
