@@ -18,6 +18,7 @@ scroll-behavior:smooth;
 body{
 background:#0a0a0a;
 color:white;
+padding-top:70px; /* ✅ TOP BAR FIX */
 }
 
 /* TOP BAR */
@@ -50,33 +51,41 @@ color:white;
 font-weight:bold;
 }
 
-/* HERO */
+/* HERO FIXED */
 .hero{
 height:100vh;
 background:
-linear-gradient(to right, rgba(0,0,0,.85), rgba(0,0,0,.30)),
+linear-gradient(to right, rgba(0,0,0,.88), rgba(0,0,0,.35)),
 url("cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg");
 
 background-size:cover;
 background-position:center;
+
 display:flex;
 align-items:center;
+
 padding-left:8%;
+padding-right:8%;
+}
+
+.hero > div{
+max-width:520px;
+margin-top:-40px; /* ✅ FIX OVERLAP */
 }
 
 .heading{
-font-size:42px;   /* छोटा किया */
+font-size:40px;
 line-height:1.2;
-max-width:450px;
+text-align:left;
 }
 
 .gold{ color:#d4af37; }
 
 .sub{
-font-size:14px;   /* छोटा किया */
+font-size:14px;
 margin-top:10px;
 color:#ddd;
-max-width:400px;
+text-align:left;
 }
 
 .btn{
@@ -90,10 +99,10 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* ACCORDION (KNOW YOUR ADVOCATE) */
+/* ACCORDION */
 .accordion{
 width:90%;
-margin:90px auto 20px;
+margin:40px auto 20px;
 background:#1b1b1b;
 border-radius:15px;
 overflow:hidden;
@@ -165,7 +174,7 @@ border-radius:15px;
 border-left:4px solid #d4af37;
 }
 
-/* STICKY */
+/* STICKY BAR */
 .sticky-bar{
 position:fixed;
 bottom:0;
@@ -202,14 +211,16 @@ color:white;
 <div class="heading">
 Protect Your <span class="gold">Rights</span>
 </div>
+
 <p class="sub">
 Advocate Shubhanjali Shukla - High Court Lucknow Bench Legal Services
 </p>
+
 <a href="#practice" class="btn">Book Consultation</a>
 </div>
 </section>
 
-<!-- ACCORDION SECTION (TOP) -->
+<!-- ACCORDION -->
 <div class="accordion">
 <div class="accordion-header" onclick="toggleAcc()">
 🎗 Know Your Advocate ▼
@@ -246,7 +257,7 @@ Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the 
 </form>
 
 <div class="address-box">
-<strong>📍 Address:</strong><br>
+<strong>📍 Chamber:</strong><br>
 Chamber No: 509, High Court Lucknow
 </div>
 </section>
