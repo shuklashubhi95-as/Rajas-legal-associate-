@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -26,6 +26,7 @@ color:#fff;
 overflow-x:hidden;
 }
 
+/* NAVBAR */
 .navbar{
 position:fixed;
 top:0;
@@ -57,6 +58,7 @@ font-size:14px;
 color:#d4af37;
 }
 
+/* HERO */
 .hero{
 padding:140px 6% 80px;
 display:flex;
@@ -71,18 +73,98 @@ width:45%;
 
 .big{
 font-family:Cinzel;
-font-size:55px;
+font-size:42px;
 line-height:1.2;
 }
 
-.big{
-font-size:42px;
+.tag{
+margin-top:10px;
+color:#ccc;
 }
 
-.nav-links{
-display:none;
+/* KNOW YOUR ADVOCATE */
+.know{
+padding:60px 6%;
+background:#0b0b0b;
+border-top:1px solid rgba(212,175,55,.2);
+border-bottom:1px solid rgba(212,175,55,.2);
 }
 
+.know h2{
+font-family:Cinzel;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.know p{
+color:#ccc;
+line-height:1.6;
+}
+
+/* PRACTICE */
+.practice{
+padding:80px 6%;
+background:#0b0b0b;
+}
+
+.title{
+font-size:28px;
+font-family:Cinzel;
+margin-bottom:30px;
+color:#d4af37;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:10px;
+border:1px solid rgba(212,175,55,.2);
+}
+
+.card i{
+font-size:25px;
+color:#d4af37;
+margin-bottom:10px;
+}
+
+.card h3{
+margin-bottom:10px;
+font-size:16px;
+}
+
+/* FLOATING BUTTONS */
+.float-call, .float-wa{
+position:fixed;
+right:20px;
+width:50px;
+height:50px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:20px;
+z-index:99999;
+}
+
+.float-wa{
+bottom:90px;
+background:#25D366;
+}
+
+.float-call{
+bottom:20px;
+background:#d4af37;
+}
+
+.float-wa:hover, .float-call:hover{
+transform:scale(1.1);
 }
 
 </style>
@@ -91,31 +173,24 @@ display:none;
 <body>
 
 <nav class="navbar">
-
-<div class="logo">
-⚖ RAJAS LEGAL ASSOCIATES
-</div>
+<div class="logo">⚖ RAJAS LEGAL ASSOCIATES</div>
 
 <div class="nav-links">
-
 <a href="#">HOME</a> |
-<a href="#about">ABOUT</a> |
+<a href="#know">ABOUT</a> |
 <a href="#practice">PRACTICE AREAS</a> |
-<a href="#">SERVICES</a> |
 <a href="#contact">CONTACT</a>
 
 <a href="https://wa.me/919005017567">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
-
 </div>
-
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 
 <div class="left">
-
 <div class="big">
 Advocate<br>
 Shubhanjali Shukla
@@ -124,25 +199,29 @@ Shubhanjali Shukla
 <p class="tag">
 General information relating to legal practice areas.
 </p>
-
 </div>
 
 <div class="right">
-
-<img src="./4add79c0-33aa-4cb9-affb-25b6abc56266.jpeg"
-alt="Advocate">
-
+<img src="./cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg"
+alt="Advocate" width="300">
 </div>
 
 </section>
 
-<div class="wave">
-<svg viewBox="0 0 1440 320">
-<path fill="#0b0b0b"
-d="M0,192L80,197C160,203,320,213,480,202C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,320L0,320Z"></path>
-</svg>
-</div>
+<!-- KNOW YOUR ADVOCATE -->
+<section id="know" class="know">
+<h2>Know Your Advocate</h2>
+<p>
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon’ble High Court, Lucknow Bench.
+She has strong experience in civil, criminal, family and cyber law matters with a client-focused approach.
+</p>
 
+<br>
+
+<p><b>State Member:</b> Information Commission</p>
+</section>
+
+<!-- PRACTICE AREAS -->
 <section id="practice" class="practice">
 
 <div class="title">PRACTICE AREAS</div>
@@ -151,42 +230,51 @@ d="M0,192L80,197C160,203,320,213,480,202C640,192,800,160,960,160C1120,160,1280,1
 
 <div class="card">
 <i class="fa-solid fa-scale-balanced"></i>
-<h3>CIVIL MATTERS</h3>
+<h3>Civil Matters</h3>
 <p>Representation and advice in all types of civil disputes.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-gavel"></i>
-<h3>CRIMINAL MATTERS</h3>
+<h3>Criminal Matters</h3>
 <p>Effective representation in criminal cases and proceedings.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-people-roof"></i>
-<h3>FAMILY & MATRIMONIAL MATTERS</h3>
+<h3>Family & Matrimonial</h3>
 <p>Divorce, maintenance, custody and family matters.</p>
 </div>
 
 <div class="card">
 <i class="fa-solid fa-house"></i>
-<h3>PROPERTY DISPUTES</h3>
+<h3>Property Disputes</h3>
 <p>Property registration, partition and possession matters.</p>
 </div>
 
 <div class="card">
-<i class="fa-solid fa-house"></i>
+<i class="fa-solid fa-shield-halved"></i>
 <h3>Cyber Law</h3>
+<p>Cases related to cyber crimes and digital issues.</p>
+</div>
 
 <div class="card">
-<i class="fa-solid fa-house"></i>
-<h3>Arbitration & Mediation </h3></h3>
-<p>Method of resolving disputes outside the court 
-  where a neutral third party either gives a binding decision (arbitration) 
-  or helps parties reach a mutual agreement (mediation)
-
+<i class="fa-solid fa-handshake"></i>
+<h3>Arbitration & Mediation</h3>
+<p>Dispute resolution outside court through settlement.</p>
+</div>
 
 </div>
 </section>
+
+<!-- FLOATING BUTTONS -->
+<a href="https://wa.me/919005017567" class="float-wa">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<a href="tel:9005017567" class="float-call">
+<i class="fa-solid fa-phone"></i>
+</a>
 
 </body>
 </html>
