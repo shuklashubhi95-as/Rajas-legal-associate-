@@ -6,7 +6,11 @@
 
 <title>Rajas Legal Associates | High Court Lucknow Advocate</title>
 
-<meta name="description" content="Rajas Legal Associates - Advocate Shubhanjali Shukla, High Court Lucknow Bench. Criminal, Civil, Family, Cyber Law, PIL & Arbitration services.">
+<meta name="description" content="Rajas Legal Associates - Advocate Shubhanjali Shukla, High Court Lucknow Bench. Legal services in Criminal, Civil, Family, Cyber Law, PIL and Arbitration matters.">
+
+<meta name="keywords" content="Advocate Lucknow, High Court Lawyer Lucknow, Criminal Lawyer UP, Civil Lawyer Lucknow, Legal Consultant Lucknow, Shubhanjali Shukla Advocate">
+
+<meta name="author" content="Rajas Legal Associates">
 
 <style>
 *{
@@ -17,7 +21,7 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#0a0a0a;
+background:#0b0b0b;
 color:white;
 }
 
@@ -31,14 +35,14 @@ padding:14px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.75);
 backdrop-filter:blur(10px);
 z-index:999;
 border-bottom:1px solid #222;
 }
 
 .logo{
-font-size:20px;
+font-size:18px;
 font-weight:bold;
 color:#d4af37;
 }
@@ -54,62 +58,48 @@ font-weight:bold;
 
 /* HERO */
 .hero{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
+margin-top:70px;
+height:90vh;
 position:relative;
-padding-top:70px;
-overflow:hidden;
 }
 
-/* IMAGE BACKGROUND */
 .hero img{
-position:absolute;
-top:0;
-left:0;
 width:100%;
 height:100%;
 object-fit:cover;
-z-index:0;
+display:block;
 }
 
-/* DARK OVERLAY */
-.overlay{
+.hero-overlay{
 position:absolute;
 top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.65);
-z-index:1;
+background:rgba(0,0,0,0.55);
 }
 
-/* HERO CONTENT */
-.hero-content{
-position:relative;
-z-index:2;
-max-width:600px;
-text-align:left;
-padding:25px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-border-radius:15px;
-border:1px solid rgba(255,255,255,0.1);
+.hero-text{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+text-align:center;
+max-width:700px;
+padding:20px;
 }
 
-.hero-content h1{
+.hero-text h1{
 font-size:42px;
-line-height:1.2;
+color:white;
 }
 
 .gold{
 color:#d4af37;
 }
 
-.hero-content p{
+.hero-text p{
 margin-top:10px;
-font-size:15px;
 color:#ddd;
 }
 
@@ -124,7 +114,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section{
 padding:70px 10%;
 background:#111;
@@ -136,10 +126,19 @@ color:#d4af37;
 margin-bottom:20px;
 }
 
+/* ABOUT */
+.about{
+background:#1b1b1b;
+padding:25px;
+border-radius:12px;
+line-height:1.7;
+color:#ddd;
+}
+
 /* CARDS */
 .cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:18px;
 margin-top:20px;
 }
@@ -152,52 +151,18 @@ text-align:center;
 border:1px solid #2a2a2a;
 }
 
-/* ACCORDION */
-.accordion{
-width:90%;
-margin:30px auto;
-background:#1a1a1a;
+/* CONTACT BOX */
+.contact{
+background:#1b1b1b;
+padding:20px;
 border-radius:12px;
-overflow:hidden;
-border:1px solid #222;
+border-left:4px solid #d4af37;
+line-height:1.7;
+margin-top:20px;
 }
 
-.accordion-header{
-padding:16px;
-cursor:pointer;
-color:#d4af37;
-font-weight:bold;
-background:#111;
-}
-
-.accordion-content{
-display:none;
-padding:18px;
-color:#ddd;
-line-height:1.6;
-}
-
-/* FORM */
-input, textarea{
-width:100%;
-padding:12px;
-margin:8px 0;
-border-radius:8px;
-border:none;
-}
-
-button{
-background:#25D366;
-color:white;
-padding:12px 18px;
-border:none;
-border-radius:25px;
-font-weight:bold;
-cursor:pointer;
-}
-
-/* STICKY BAR */
-.sticky{
+/* FOOTER BAR */
+.footer-bar{
 position:fixed;
 bottom:0;
 left:0;
@@ -206,7 +171,7 @@ display:flex;
 z-index:999;
 }
 
-.sticky a{
+.footer-bar a{
 flex:1;
 text-align:center;
 padding:14px;
@@ -216,7 +181,7 @@ color:white;
 }
 
 .call{background:#d4af37;color:black;}
-.dir{background:#1e88e5;}
+.map{background:#1e88e5;}
 </style>
 </head>
 
@@ -233,44 +198,35 @@ color:white;
 
 <img src="cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg" alt="Advocate Shubhanjali Shukla">
 
-<div class="overlay"></div>
+<div class="hero-overlay"></div>
 
-<div class="hero-content">
-<h1>Protect Your <span class="gold">Rights</span></h1>
+<div class="hero-text">
+<h1>Advocate <span class="gold">Shubhanjali Shukla</span></h1>
+<p>High Court Lucknow Bench Legal Services</p>
+<a class="btn" href="#about">Know More</a>
+</div>
 
-<p>
-👩‍⚖️ Advocate Shubhanjali Shukla<br>
-🏛 High Court Lucknow Bench
-</p>
+</section>
 
-<a class="btn" href="#practice">Book Consultation</a>
+<!-- ABOUT -->
+<section class="section" id="about">
+<h2 class="title">👩‍⚖️ About Us</h2>
+
+<div class="about">
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench. She has successfully completed 5 years of B.A. LL.B., building a strong academic foundation combined with practical legal experience.
+
+<br><br>
+
+She is committed to providing clear, effective, and result-oriented legal solutions. Her practice emphasizes thorough case analysis, timely advice, and diligent representation to safeguard the rights and interests of her clients.
+
+<br><br>
+
+She believes in transparency, professionalism, and integrity while handling every matter, whether litigation, drafting, or consultation.
 </div>
 </section>
 
-<!-- ACCORDION -->
-<div class="accordion">
-<div class="accordion-header" onclick="toggleAcc()">
-🎗 Know Your Advocate
-</div>
-
-<div class="accordion-content" id="acc">
-👩‍⚖️ Advocate Shubhanjali Shukla is a dedicated legal professional practicing at High Court Lucknow Bench.
-
-⚖ Practice Areas:
-- Criminal Law  
-- Civil Law  
-- Family Law  
-- Cyber Law  
-- PIL  
-- Arbitration  
-
-<br><br>
-🎗 State Member – State Information Commission, Uttar Pradesh
-</div>
-</div>
-
 <!-- PRACTICE -->
-<section class="section" id="practice">
+<section class="section">
 <h2 class="title">⚖ Practice Areas</h2>
 
 <div class="cards">
@@ -281,42 +237,28 @@ color:white;
 <div class="card">PIL</div>
 <div class="card">Arbitration</div>
 </div>
-
-<h2 class="title">📞 Book Appointment</h2>
-
-<form onsubmit="sendWA(); return false;">
-<input id="name" placeholder="Your Name" required>
-<input id="phone" placeholder="Phone Number" required>
-<textarea id="msg" placeholder="Your Legal Issue" required></textarea>
-<button type="submit">Send on WhatsApp</button>
-</form>
 </section>
 
-<!-- STICKY -->
-<div class="sticky">
-<a class="call" href="tel:+919005017567">📞 Call</a>
-<a class="dir" href="https://www.google.com/maps/search/?api=1&query=High+Court+Lucknow">📍 Directions</a>
+<!-- CONTACT -->
+<section class="section">
+<h2 class="title">📍 Contact Details</h2>
+
+<div class="contact">
+📞 Mobile: 9005017567 <br>
+🏛 High Court Lucknow Bench <br>
+📍 B Block, 4th Floor, Chamber No. 509, Lucknow <br>
+🔗 LinkedIn: 
+<a href="https://www.linkedin.com/in/shubhanjali-shukla-5b5525218" style="color:#25D366;" target="_blank">
+Profile Link
+</a>
 </div>
+</section>
 
-<script>
-function sendWA(){
-let n=document.getElementById("name").value;
-let p=document.getElementById("phone").value;
-let m=document.getElementById("msg").value;
-
-let url="https://wa.me/919005017567?text="
-+"Name: "+n+"%0a"
-+"Phone: "+p+"%0a"
-+"Issue: "+m;
-
-window.open(url,"_blank");
-}
-
-function toggleAcc(){
-let box=document.getElementById("acc");
-box.style.display = box.style.display==="block" ? "none" : "block";
-}
-</script>
+<!-- FOOTER BAR -->
+<div class="footer-bar">
+<a class="call" href="tel:+919005017567">📞 Call Now</a>
+<a class="map" href="https://www.google.com/maps/search/?api=1&query=High+Court+Lucknow">📍 Directions</a>
+</div>
 
 </body>
 </html>
