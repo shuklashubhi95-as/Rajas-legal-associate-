@@ -12,71 +12,32 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial,sans-serif;
-scroll-behavior:smooth;
 }
 
 body{
-background:#f4f4f4;
+background:#f5f5f5;
 color:#222;
 }
 
+/* Poster Banner */
+
 .hero{
-height:100vh;
-background:url("Rajas Legal Associates.png");
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-padding:60px;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-height:100%;
 width:100%;
-background:rgba(0,0,0,0.65);
+min-height:420px;
+background-image:url("./Rajas Legal Associates.png");
+background-repeat:no-repeat;
+background-position:center top;
+background-size:100% auto;
+background-color:#111;
 }
 
-.overlay{
-position:relative;
-z-index:2;
-max-width:600px;
-color:white;
+@media(max-width:768px){
+
+.hero{
+min-height:300px;
+background-size:contain;
 }
 
-.logo{
-font-size:34px;
-font-weight:bold;
-color:#f7c948;
-margin-bottom:15px;
-}
-
-h1{
-font-size:55px;
-margin-bottom:20px;
-}
-
-span{
-color:#f7c948;
-}
-
-p{
-line-height:1.8;
-}
-
-.btn{
-display:inline-block;
-padding:14px 30px;
-margin-top:25px;
-background:#f7c948;
-color:black;
-text-decoration:none;
-font-weight:bold;
-border-radius:30px;
 }
 
 .section{
@@ -85,14 +46,19 @@ background:white;
 }
 
 .section h2{
-font-size:38px;
+font-size:40px;
 margin-bottom:20px;
+}
+
+.section p{
+line-height:1.8;
+font-size:20px;
 }
 
 .cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+gap:20px;
 margin-top:30px;
 }
 
@@ -100,119 +66,86 @@ margin-top:30px;
 background:#fafafa;
 padding:30px;
 border-radius:15px;
-box-shadow:0 0 12px rgba(0,0,0,.12);
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:10px;
 }
 
 .footer{
-background:#111;
+background:black;
 color:white;
 padding:60px;
 text-align:center;
+line-height:2;
 }
 
-/* WhatsApp Floating Button */
+/* WhatsApp Button */
 
 .float-whatsapp{
 
 position:fixed;
-width:60px;
-height:60px;
 bottom:25px;
 right:25px;
+width:65px;
+height:65px;
 background:#25D366;
 border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:28px;
+font-size:30px;
 text-decoration:none;
 color:white;
 z-index:9999;
-box-shadow:0 0 15px rgba(0,0,0,.3);
+box-shadow:0 0 20px rgba(0,0,0,.3);
 
 }
 
 </style>
+
 </head>
 
 <body>
 
-
-<section class="hero">
-
-<div class="overlay">
-
-<div class="logo">
-⚖️ Rajas Legal Associates
-</div>
-
-<h1>
-Protect Your <span>Rights</span>
-</h1>
-
-<p>
-
-Professional legal consultation and representation with Advocate Shubhanjali Shukla practicing at Hon'ble High Court, Lucknow Bench.
-
-</p>
-
-<a href="#contact" class="btn">
-Book Consultation
-</a>
-
-</div>
-
-</section>
+<section class="hero"></section>
 
 
 <section class="section">
 
-<h2>About Us</h2>
+<h2>Know Your Advocate</h2>
 
 <p>
 
-Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench. She has completed 5 years of B.A. LL.B., combining strong legal knowledge with practical courtroom experience.
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench. She has successfully completed 5 years of B.A. LL.B., building a strong academic foundation combined with practical legal experience.
+
+With a client-focused and ethical approach, Advocate Shubhanjali Shukla is committed to providing clear, effective and result-oriented legal solutions.
 
 </p>
 
 </section>
 
 
-
 <section class="section">
 
-<h2>Practice Areas</h2>
+<h2>Why Clients Trust Us</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Criminal Law</h3>
-<p>Defense and criminal legal matters.</p>
+<h3>We know and understand the law</h3>
+<p>Professional legal support with dedication.</p>
 </div>
 
 <div class="card">
-<h3>Civil Law</h3>
-<p>Civil disputes and legal support.</p>
+<h3>We are your advocate</h3>
+<p>Strong representation and advice.</p>
 </div>
 
 <div class="card">
-<h3>Family Law</h3>
-<p>Marriage and family related matters.</p>
-</div>
-
-<div class="card">
-<h3>Cyber Law</h3>
-<p>Digital and cyber crime legal help.</p>
-</div>
-
-<div class="card">
-<h3>PIL</h3>
-<p>Public Interest Litigation matters.</p>
-</div>
-
-<div class="card">
-<h3>Arbitration</h3>
-<p>Mediation and legal consultancy.</p>
+<h3>We provide the counsel you need</h3>
+<p>Guidance and legal expertise.</p>
 </div>
 
 </div>
@@ -220,30 +153,59 @@ Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the 
 </section>
 
 
-<section class="footer" id="contact">
+<section class="section">
 
-<h2>Contact Us</h2>
+<h2>Practice Area</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Arbitration & Mediation</h3>
+</div>
+
+<div class="card">
+<h3>Criminal Defense</h3>
+</div>
+
+<div class="card">
+<h3>Family Law</h3>
+</div>
+
+<div class="card">
+<h3>PIL</h3>
+</div>
+
+<div class="card">
+<h3>Civil Law</h3>
+</div>
+
+<div class="card">
+<h3>Cyber Law</h3>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="footer">
+
+<h2>Send Us A Message</h2>
 
 <br>
 
-<p>
+📍 Main Office<br>
+New Building Block B<br>
+Chamber No 509<br>
+Lucknow-226010
 
-📍 New Building B Block  
-Chamber No 509, 4th Floor  
-High Court Lucknow  
-226010
+<br><br>
 
-</p>
+📞 9005017567
 
 <br>
 
-<p>
-📞 +91 9005017567
-</p>
-
-<p>
 ✉️ ShuklaShubhi95@gmail.com
-</p>
 
 </section>
 
@@ -251,7 +213,6 @@ High Court Lucknow
 <a href="https://wa.me/919005017567" class="float-whatsapp">
 💬
 </a>
-
 
 </body>
 </html>
