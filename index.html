@@ -47,12 +47,10 @@ color:white;
 font-weight:bold;
 }
 
-/* HERO */
+/* HERO (SAFE IMAGE ONLY) */
 .hero{
 margin-top:70px;
 height:90vh;
-position:relative;
-overflow:hidden;
 }
 
 .hero img{
@@ -62,30 +60,9 @@ object-fit:cover;
 display:block;
 }
 
-/* TEXT FIXED (NO FACE OVERLAP) */
+/* NO OVERLAY, NO TEXT ON IMAGE */
 .hero-text{
-position:absolute;
-bottom:40px;
-left:30px;
-background:rgba(0,0,0,0.45);
-padding:15px 18px;
-border-radius:12px;
-max-width:320px;
-}
-
-.hero-text h1{
-font-size:26px;
-color:white;
-}
-
-.gold{
-color:#d4af37;
-}
-
-.hero-text p{
-margin-top:8px;
-font-size:14px;
-color:#ddd;
+display:none;
 }
 
 /* SECTION */
@@ -98,6 +75,14 @@ background:#111;
 font-size:30px;
 color:#d4af37;
 margin-bottom:20px;
+}
+
+/* ABOUT BOX */
+.box{
+background:#1b1b1b;
+padding:20px;
+border-radius:10px;
+line-height:1.7;
 }
 
 /* CARDS */
@@ -120,9 +105,10 @@ background:#1b1b1b;
 padding:20px;
 border-radius:10px;
 margin-top:15px;
+line-height:1.6;
 }
 
-/* STICKY */
+/* STICKY BAR */
 .sticky{
 position:fixed;
 bottom:0;
@@ -153,21 +139,28 @@ color:white;
 <a class="whatsapp" href="https://wa.me/919005017567">WhatsApp</a>
 </div>
 
-<!-- HERO -->
+<!-- HERO IMAGE ONLY -->
 <div class="hero">
-
 <img src="cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg" alt="Advocate">
-
-<div class="hero-text">
-<h1>Advocate <span class="gold">Shubhanjali Shukla</span></h1>
-<p>High Court Lucknow Bench</p>
 </div>
 
+<!-- ABOUT -->
+<section class="section">
+<h2 class="title">🎗 Know Your Advocate</h2>
+
+<div class="box">
+Advocate Shubhanjali Shukla is a dedicated legal professional practicing at the Hon'ble High Court, Lucknow Bench. She has successfully completed 5 years of B.A. LL.B., building a strong academic foundation combined with practical legal experience.<br><br>
+
+She provides legal services in Criminal, Civil, Family, Cyber Law, PIL and Arbitration matters.<br><br>
+
+<b>🎗️ State Member</b><br>
+State Information Commission, Uttar Pradesh
 </div>
+</section>
 
 <!-- PRACTICE -->
 <section class="section">
-<h2 class="title">Practice Areas</h2>
+<h2 class="title">⚖ Practice Areas</h2>
 
 <div class="cards">
 <div class="card">Criminal Law</div>
@@ -181,12 +174,12 @@ color:white;
 
 <!-- CONTACT -->
 <section class="section">
-<h2 class="title">Contact</h2>
+<h2 class="title">📍 Contact</h2>
 
 <div class="contact">
 📞 9005017567 <br>
 🏛 High Court Lucknow Bench <br>
-📍 Chamber No. 509, B Block, 4th Floor
+📍 Chamber No. 509, B Block, 4th Floor, Gomti Nagar, Lucknow
 </div>
 </section>
 
