@@ -239,7 +239,7 @@ Known for her clarity, professionalism, and client-focused approach, she ensures
 
 <br>
 
-<p><b>State Member:</b> Information Commission</p>
+<p><b>State Member:</b> State Information Commission</p>
 </section>
 
 <!-- PRACTICE AREAS -->
@@ -355,10 +355,10 @@ z-index:9999;
 </div>
 
 <div id="chatArea" style="
-height:120px;
+height:90px;
 overflow:auto;
 padding:8px;
-font-size:12px;
+font-size:09px;
 ">
 
 <div><b>Bot:</b> Hi 👋 Ask Civil / Criminal / Family / Cheque Bounce</div>
@@ -380,20 +380,14 @@ Send
 </button>
 
 </div>
-
 <script>
 function sendMessage(){
-
 let input = document.getElementById("userInput");
 let msg = input.value.toLowerCase();
 let chat = document.getElementById("chatArea");
-
 if(msg.trim() === "") return;
-
 chat.innerHTML += "<div><b>You:</b> " + msg + "</div>";
-
 let reply = "";
-
 if(msg.includes("civil")){
 reply = "Civil: property, dispute, agreement cases.";
 }
@@ -409,7 +403,6 @@ reply = "Cheque bounce under Negotiable Instruments Act.";
 else{
 reply = "Please share more details.";
 }
-
 chat.innerHTML += "<div><b>Bot:</b> " + reply + "</div>";
 
 input.value = "";
