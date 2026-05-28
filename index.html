@@ -336,12 +336,56 @@ Send
 
 </div>
 
+<!-- AI CHAT BOX (MOBILE FIXED) -->
+<div id="chatBox" style="
+position:fixed;
+bottom:15px;
+right:15px;
+width:260px;
+max-width:90%;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+font-family:Arial;
+z-index:9999;
+">
+
+<div style="background:#1a1a1a;color:white;padding:10px;border-radius:10px 10px 0 0;font-size:14px;">
+⚖️ Legal AI Assistant
+</div>
+
+<div id="chatArea" style="
+height:120px;
+overflow:auto;
+padding:8px;
+font-size:12px;
+">
+
+<div><b>Bot:</b> Hi 👋 Ask Civil / Criminal / Family / Cheque Bounce</div>
+
+</div>
+
+<input id="userInput" type="text" placeholder="Type..."
+style="width:100%;padding:8px;border:none;border-top:1px solid #ddd;font-size:12px;">
+
+<button onclick="sendMessage()" style="
+width:100%;
+padding:8px;
+background:#25D366;
+color:white;
+border:none;
+font-size:13px;
+">
+Send
+</button>
+
+</div>
+
 <script>
 function sendMessage(){
 
 let input = document.getElementById("userInput");
 let msg = input.value.toLowerCase();
-
 let chat = document.getElementById("chatArea");
 
 if(msg.trim() === "") return;
@@ -350,23 +394,20 @@ chat.innerHTML += "<div><b>You:</b> " + msg + "</div>";
 
 let reply = "";
 
-if(msg.includes("hello") || msg.includes("hi")){
-reply = "Hello 👋 Please tell your legal issue.";
-}
-else if(msg.includes("civil")){
-reply = "Civil cases include property disputes, agreements, injunctions.";
+if(msg.includes("civil")){
+reply = "Civil: property, dispute, agreement cases.";
 }
 else if(msg.includes("criminal")){
-reply = "Criminal cases include bail, FIR, defense matters.";
+reply = "Criminal: bail, FIR, defense matters.";
 }
 else if(msg.includes("family")){
-reply = "Family cases include divorce, maintenance, custody.";
+reply = "Family: divorce, custody, maintenance.";
 }
 else if(msg.includes("cheque")){
-reply = "Cheque bounce cases are handled under Negotiable Instruments Act.";
+reply = "Cheque bounce under Negotiable Instruments Act.";
 }
 else{
-reply = "Please share more details. Our advocate will assist you.";
+reply = "Please share more details.";
 }
 
 chat.innerHTML += "<div><b>Bot:</b> " + reply + "</div>";
