@@ -184,7 +184,7 @@ width:100%;
 }
 
 .big{
-font-size:26px;
+font-size:30px;
 }
 }
 </style>
@@ -299,6 +299,81 @@ Known for her clarity, professionalism, and client-focused approach, she ensures
 <a href="tel:9005017567" class="float-call">
 <i class="fa-solid fa-phone"></i>
 </a>
+<!-- AI LEGAL CHAT BOX -->
+<div id="chatBox" style="
+position:fixed;
+bottom:20px;
+left:20px;
+width:280px;
+background:white;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+font-family:Arial;
+z-index:9999;
+">
 
+<div style="background:#1a1a1a;color:white;padding:10px;border-radius:10px 10px 0 0;">
+⚖️ Legal AI Assistant
+</div>
+
+<div id="chatArea" style="height:200px;overflow:auto;padding:10px;font-size:13px;">
+<div><b>Bot:</b> Hello 👋 How can I help you? (Civil / Criminal / Family / Cheque Bounce)</div>
+</div>
+
+<input id="userInput" type="text" placeholder="Type your query..."
+style="width:100%;padding:10px;border:none;border-top:1px solid #ddd;">
+
+<button onclick="sendMessage()" style="
+width:100%;
+padding:10px;
+background:#25D366;
+color:white;
+border:none;
+cursor:pointer;
+">
+Send
+</button>
+
+</div>
+
+<script>
+function sendMessage(){
+
+let input = document.getElementById("userInput");
+let msg = input.value.toLowerCase();
+
+let chat = document.getElementById("chatArea");
+
+if(msg.trim() === "") return;
+
+chat.innerHTML += "<div><b>You:</b> " + msg + "</div>";
+
+let reply = "";
+
+if(msg.includes("hello") || msg.includes("hi")){
+reply = "Hello 👋 Please tell your legal issue.";
+}
+else if(msg.includes("civil")){
+reply = "Civil cases include property disputes, agreements, injunctions.";
+}
+else if(msg.includes("criminal")){
+reply = "Criminal cases include bail, FIR, defense matters.";
+}
+else if(msg.includes("family")){
+reply = "Family cases include divorce, maintenance, custody.";
+}
+else if(msg.includes("cheque")){
+reply = "Cheque bounce cases are handled under Negotiable Instruments Act.";
+}
+else{
+reply = "Please share more details. Our advocate will assist you.";
+}
+
+chat.innerHTML += "<div><b>Bot:</b> " + reply + "</div>";
+
+input.value = "";
+chat.scrollTop = chat.scrollHeight;
+}
+</script>
 </body>
 </html>
