@@ -1,314 +1,1102 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajas Legal Associates | Advocates in Lucknow</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        serif: ['Merriweather', 'serif'],
-                        sans: ['Open Sans', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#1e3a8a', // Deep Blue
-                        secondary: '#b45309', // Gold/Bronze
-                        dark: '#0f172a',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .hero-bg {
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Legal Associates - Advocate Shubhanjali Shukla</title>
+  
+  <!-- Fonts Integration (Premium Serif & Classic Gothic Style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Styling adjustments to match exact colors and typography */
+    :root {
+      --gold-light: #f3e9cc;
+      --gold-main: #c28833;
+      --gold-dark: #84501e;
+      --legal-dark: #0f1115;
+      --legal-gray: #1a1e24;
+      --legal-black: #050608;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--legal-dark);
+      color: #ffffff;
+    }
+
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+
+    .font-serif-playfair {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Gold text gradient */
+    .gold-text {
+      background: linear-gradient(135deg, #faf6eb 0%, #c28833 70%, #84501e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glow Effect */
+    .gold-glow {
+      box-shadow: 0 0 15px rgba(194, 136, 51, 0.2);
+    }
+
+    /* Hide scrollbars during modal open */
+    .modal-active {
+      overflow: hidden;
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-700 bg-gray-50">
+<body class="selection:bg-[#c28833] selection:text-[#0f1115] antialiased">
 
-    <!-- Navigation -->
-    <header class="bg-white shadow-md fixed w-full z-50 top-0">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3 text-primary">
-                <i class="fa-solid fa-scale-balanced text-3xl"></i>
-                <div>
-                    <h1 class="font-serif font-bold text-2xl leading-none">Rajas Legal</h1>
-                    <span class="text-xs uppercase tracking-widest text-gray-500 font-bold">Associates</span>
-                </div>
-            </div>
-            <nav class="hidden md:flex gap-6 font-semibold text-gray-600">
-                <a href="#home" class="hover:text-secondary transition">Home</a>
-                <a href="#about" class="hover:text-secondary transition">About</a>
-                <a href="#practice-areas" class="hover:text-secondary transition">Practice Areas</a>
-                <a href="#team" class="hover:text-secondary transition">Our Team</a>
-                <a href="#contact" class="hover:text-secondary transition">Contact</a>
-            </nav>
-            <a href="https://wa.me/919005017567" target="_blank" class="hidden md:block bg-green-600 text-white px-5 py-2 rounded shadow hover:bg-green-700 transition">
-                <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
-            </a>
-        </div>
-    </header>
+  <!-- =============== HEADER / NAVIGATION =============== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/80 backdrop-blur-md border-b border-[#c28833]/20 py-4 shadow-lg" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo & Brand -->
+        <a href="#home" class="flex items-center space-x-3 group">
+          <div class="bg-gradient-to-br from-[#f3e9cc] to-[#c28833] p-2 rounded-lg border border-[#c28833]/30 transition-transform group-hover:scale-105 duration-300">
+            <i data-lucide="scale" class="h-6 w-6 text-[#0f1115] stroke-[2]"></i>
+          </div>
+          <div>
+            <span class="block font-cinzel text-lg sm:text-xl font-bold tracking-wider text-[#dab970]">RAJESH LEGAL</span>
+            <span class="block text-[9px] tracking-[0.25em] text-[#faf6eb]/65 uppercase">Advocates & Legal Consultants</span>
+          </div>
+        </a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg h-screen flex items-center pt-20">
-        <div class="container mx-auto px-4 text-center text-white">
-            <span class="text-secondary font-bold tracking-widest uppercase mb-4 block">Trusted Legal Solutions With Integrity & Professionalism</span>
-            <h2 class="font-serif text-4xl md:text-6xl font-bold mb-6">Professional Legal Services <br>in Lucknow</h2>
-            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-gray-200">
-                Reliable legal representation for civil, criminal, property, and corporate matters with a commitment to justice and client satisfaction.
-            </p>
-            <div class="flex justify-center gap-4">
-                <a href="#contact" class="bg-secondary text-white px-8 py-3 rounded font-bold hover:bg-yellow-700 transition shadow-lg">Get Legal Help</a>
-                <a href="tel:+919005017567" class="bg-transparent border border-white text-white px-8 py-3 rounded font-bold hover:bg-white hover:text-dark transition shadow-lg"><i class="fa-solid fa-phone mr-2"></i> Call Now</a>
-            </div>
-        </div>
-    </section>
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">HOME</a>
+          <a href="#practice-areas" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">PRACTICE AREAS</a>
+          <a href="#about" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">ABOUT</a>
+          <a href="#contact" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">CONTACT</a>
+          
+          <button onclick="openModal()" class="flex items-center space-x-2 px-5 py-2.5 border border-[#c28833] rounded-lg hover:bg-[#c28833] hover:text-[#0f1115] text-[#dab970] text-xs font-bold tracking-widest transition-all duration-300 uppercase shadow-md cursor-pointer">
+            <i data-lucide="message-square" class="h-4 w-4"></i>
+            <span>WHATSAPP</span>
+          </button>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <img src="https://images.unsplash.com/photo-1505664173615-04e4a7732aeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Law Firm" class="rounded-lg shadow-xl">
-                </div>
-                <div class="md:w-1/2">
-                    <h4 class="text-secondary font-bold uppercase mb-2">About The Firm</h4>
-                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-dark mb-6">Advocating for Your Rights in Uttar Pradesh</h2>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        <strong>Rajas Legal Associates</strong> is a professional law firm based in Lucknow, Uttar Pradesh, providing legal representation and consultancy services across civil, criminal, corporate, property, and family law matters. 
-                    </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed">
-                        The firm is committed to ethical advocacy, strategic legal solutions, and client-focused representation before District Courts and the Hon’ble High Court.
-                    </p>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-secondary"></i> Ethical Advocacy</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-secondary"></i> Strategic Solutions</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-secondary"></i> District Courts</div>
-                        <div class="flex items-center gap-2"><i class="fa-solid fa-check text-secondary"></i> Hon’ble High Court</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-[#dab970] p-2 rounded focus:outline-none">
+          <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+        </button>
 
-    <!-- Why Choose Us -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h4 class="text-secondary font-bold uppercase mb-2">Why Choose Us</h4>
-                <h2 class="font-serif text-3xl font-bold text-dark">Dedicated to Excellence</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Cards -->
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-user-tie text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">Experienced Legal Team</h3>
-                </div>
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-comments text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">Transparent Consultation</h3>
-                </div>
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-bolt text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">Fast Case Response</h3>
-                </div>
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-building-columns text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">High Court Representation</h3>
-                </div>
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-user-shield text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">Client Confidentiality</h3>
-                </div>
-                <div class="bg-white p-6 rounded shadow border-t-4 border-secondary text-center">
-                    <i class="fa-solid fa-hand-holding-dollar text-4xl text-primary mb-4"></i>
-                    <h3 class="font-serif font-bold text-xl mb-2 text-dark">Affordable Legal Services</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Practice Areas -->
-    <section id="practice-areas" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h4 class="text-secondary font-bold uppercase mb-2">Areas of Expertise</h4>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-dark">Practice Areas</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-gavel text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Civil Litigation</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-handcuffs text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Criminal Defense</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-ring text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Family Law</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-house-chimney text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Public Interest Litigation </h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-handshake text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Arbitration & Mediation</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-cart-shopping text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Cyber Law</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-briefcase text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">High Court Matters</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-file-signature text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
-                    <h3 class="font-bold text-dark">Bail Matters</h3>
-                </div>
-                <div class="border border-gray-200 p-4 rounded hover:shadow-lg hover:border-primary transition text-center group">
-                    <i class="fa-solid fa-folder-open text-2xl text-secondary mb-3 group-hover:scale-110 transition"></i>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0f1115] border-b border-[#c28833]/20 py-4 px-6 space-y-3">
+      <a href="#home" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">HOME</a>
+      <a href="#practice-areas" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">PRACTICE AREAS</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">ABOUT</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">CONTACT</a>
+      <button onclick="openModal(); toggleMobileMenu()" class="w-full flex items-center justify-center space-x-2 py-3 bg-gradient-to-r from-[#c28833] to-[#84501e] text-[#0f1115] text-xs font-bold tracking-widest rounded-lg">
+        <i data-lucide="message-square" class="h-4 w-4"></i>
+        <span>WHATSAPP CONSULTATION</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =============== HERO / INTRODUCTION =============== -->
+  <section id="home" class="relative min-h-screen pt-32 pb-20 px-4 sm:px-8 flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#1e1a12,transparent_60%)] opacity-70 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0f1115] to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 animate-fade-in">
       
-                </div>
-            </div>
+      <!-- Text details -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="space-y-1">
+          <span class="block text-xs sm:text-sm font-bold tracking-[0.25em] text-[#c28833] uppercase">Advocate</span>
+          <div class="h-[2px] w-12 bg-[#c28833]"></div>
         </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h4 class="text-secondary font-bold uppercase mb-2">Our Advocates</h4>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-dark">Meet Our Legal Team</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Team Member 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center p-8">
-                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto flex items-center justify-center mb-4 border-2 border-secondary">
-                        <i class="fa-solid fa-user text-4xl text-gray-400"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-dark mb-1">Adv. Rohit Tripathi</h3>
-                    <p class="text-secondary font-semibold mb-2">Senior Advocate & Founder</p>
-                    <p class="text-gray-500 text-sm"><i class="fa-solid fa-clock mr-1"></i> Experience: 12+ Years</p>
-                </div>
-                <!-- Team Member 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center p-8">
-                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto flex items-center justify-center mb-4 border-2 border-secondary">
-                        <i class="fa-solid fa-user text-4xl text-gray-400"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-dark mb-1">Adv. Rajesh Tiwari</h3>
-                    <p class="text-secondary font-semibold mb-2">Family & Civil Law Specialist</p>
-                </div>
-                <!-- Team Member 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden text-center p-8">
-                    <div class="w-24 h-24 bg-gray-200 rounded-full mx-auto flex items-center justify-center mb-4 border-2 border-secondary">
-                        <i class="fa-solid fa-user text-4xl text-gray-400"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-dark mb-1">Adv. Shubhanjali Shukla</h3>
-                    <p class="text-secondary font-semibold mb-2">Criminal & High Court Advocate</p>
-                </div>
-            </div>
+        <h1 class="font-serif-playfair text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-[#faf6eb]">
+          Shubhanjali <span class="text-[#dab970] font-light italic">Shukla</span>
+          <span class="inline-block text-[#c28833] ml-2">
+            <i data-lucide="gavel" class="h-8 w-8 inline-block align-middle stroke-[1.5]"></i>
+          </span>
+        </h1>
+
+        <div class="flex items-center space-x-4 py-1">
+          <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-[#c28833]/40"></div>
+          <p class="text-xs uppercase tracking-[0.18em] text-[#f3e9cc]/80 text-center font-medium">
+            Professional Legal Consultation & Assistance
+          </p>
+          <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-[#c28833]/40"></div>
         </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-primary text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="font-serif text-3xl font-bold mb-12">What Our Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                    <div class="text-yellow-400 mb-3 text-lg">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="italic text-gray-200">“Professional and supportive legal guidance.”</p>
-                </div>
-                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                    <div class="text-yellow-400 mb-3 text-lg">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="italic text-gray-200">“Excellent handling of our property dispute matter.”</p>
-                </div>
-                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm">
-                    <div class="text-yellow-400 mb-3 text-lg">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="italic text-gray-200">“Quick response and highly experienced advocates.”</p>
-                </div>
-            </div>
+        <!-- Official Status Badge -->
+        <div class="bg-[#1a1e24]/70 border border-[#c28833]/30 rounded-xl p-5 shadow-xl flex items-start space-x-4 max-w-xl">
+          <div class="bg-[#c28833]/10 p-2.5 rounded-lg border border-[#c28833]/30 text-[#dab970]">
+            <i data-lucide="award" class="h-6 w-6"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold tracking-widest text-[#dab970] uppercase">State Member –</h4>
+            <p class="text-sm font-medium text-[#faf6eb]/90 leading-relaxed mt-0.5">
+              State Information Commission, Uttar Pradesh
+            </p>
+          </div>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row gap-12 bg-gray-50 rounded-lg p-8 md:p-12 shadow-md border border-gray-100">
-                <div class="md:w-1/2">
-                    <h4 class="text-secondary font-bold uppercase mb-2">Get In Touch</h4>
-                    <h2 class="font-serif text-3xl font-bold text-dark mb-6">Contact Details</h2>
-                    <ul class="space-y-6">
-                        <li class="flex items-start gap-4">
-                            <div class="bg-primary text-white p-3 rounded-full h-12 w-12 flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-dark">Office Address</h4>
-                                <p class="text-gray-600">B Block 4th floor Chamber No. 509,<br>Near High Court Gate no 6,<br>Gomti Nagar, Lucknow, Uttar Pradesh</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="bg-primary text-white p-3 rounded-full h-12 w-12 flex items-center justify-center shrink-0">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-dark">Phone</h4>
-                                <a href="tel:+919005017567" class="text-gray-600 hover:text-secondary">+91 9005017567</a>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-4">
-                            <div class="bg-green-600 text-white p-3 rounded-full h-12 w-12 flex items-center justify-center shrink-0">
-                                <i class="fa-brands fa-whatsapp"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-dark">WhatsApp</h4>
-                                <a href="https://wa.me/919005017567" target="_blank" class="text-gray-600 hover:text-green-600">+91 9005017567</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="md:w-1/2 flex flex-col justify-center">
-                    <div class="bg-white p-8 rounded shadow text-center border-t-4 border-secondary">
-                        <i class="fa-regular fa-calendar-check text-4xl text-primary mb-4"></i>
-                        <h3 class="font-serif font-bold text-2xl mb-4 text-dark">Schedule a Consultation</h3>
-                        <p class="text-gray-600 mb-6">Reach out to us directly via Phone or WhatsApp to discuss your legal matters confidentially.</p>
-                        <a href="tel:+919005017567" class="inline-block bg-primary text-white px-8 py-3 rounded font-bold hover:bg-blue-900 transition w-full mb-3"><i class="fa-solid fa-phone mr-2"></i> Call Us Today</a>
-                        <a href="https://wa.me/919005017567" target="_blank" class="inline-block bg-green-600 text-white px-8 py-3 rounded font-bold hover:bg-green-700 transition w-full"><i class="fa-brands fa-whatsapp mr-2"></i> Message on WhatsApp</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Coordinates Details -->
+        <div class="space-y-4 max-w-xl text-sm text-[#faf6eb]/80">
+          <div class="flex items-start space-x-3">
+            <i data-lucide="map-pin" class="h-5 w-5 text-[#c28833] shrink-0 mt-0.5"></i>
+            <p class="leading-relaxed font-light">High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</p>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i data-lucide="phone" class="h-5 w-5 text-[#c28833] shrink-0"></i>
+            <p class="font-semibold tracking-wider hover:text-[#dab970] transition-colors">+91 90050 17567</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-gray-400 py-8 border-t border-gray-800 text-center">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0">
-                <span class="font-serif text-xl text-white font-bold tracking-wider">Rajas Legal Associates</span>
-            </div>
-            <p>&copy; 2026 Rajas Legal Associates. All Rights Reserved.</p>
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <button onclick="openModal()" class="px-8 py-4 bg-gradient-to-r from-[#c28833] via-[#a36a26] to-[#84501e] text-[#0f1115] hover:opacity-90 font-bold text-xs tracking-[0.2em] rounded-lg shadow-lg flex items-center justify-center space-x-3 uppercase cursor-pointer">
+            <i data-lucide="message-square" class="h-5 w-5 fill-current"></i>
+            <span>WHATSAPP CONSULTATION</span>
+          </button>
+          <a href="https://wa.me/919005017567?text=Hello" target="_blank" class="px-8 py-4 bg-[#1a1e24]/50 border border-[#c28833] hover:bg-[#c28833]/10 text-[#dab970] font-bold text-xs tracking-[0.2em] rounded-lg text-center flex items-center justify-center space-x-2 uppercase">
+            <span>DIRECT CHAT NOW</span>
+          </a>
         </div>
-    </footer>
+      </div>
 
+      <!-- Right Column - Portrait Image Mock -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+        <div class="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-[#c28833]/20 via-transparent to-transparent blur-lg opacity-60"></div>
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#c28833]/40 max-w-[360px] aspect-[3/4] gold-glow">
+          <img 
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
+            alt="Advocate Portrait Placeholder" 
+            class="w-full h-full object-cover object-top"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0f1115]/80 via-transparent to-transparent"></div>
+          <div class="absolute inset-4 border border-[#c28833]/20 rounded-xl pointer-events-none"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== PRACTICE AREAS =============== -->
+  <section id="practice-areas" class="bg-[#fcfbf9] text-[#1a1e24] py-24 px-4 sm:px-8 border-t border-b border-[#c28833]/20 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-semibold tracking-[0.2em] text-[#0f1115]">PRACTICE AREAS</h2>
+        <div class="flex items-center justify-center space-x-3 max-w-sm mx-auto">
+          <div class="h-[1px] flex-1 bg-[#c28833]/60"></div>
+          <div class="w-2.5 h-2.5 bg-[#c28833] transform rotate-45 border border-[#84501e]"></div>
+          <div class="h-[1px] flex-1 bg-[#c28833]/60"></div>
+        </div>
+      </div>
+
+      <!-- Practice Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-neutral-200 rounded-xl overflow-hidden bg-white shadow-xl">
+        
+        <!-- Grid Item 1 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 last:border-b-0 last:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="scale" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">CIVIL MATTERS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Representation and advice in all types of civil disputes, property partition, and injunction cases.</p>
+        </div>
+
+        <!-- Grid Item 2 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="gavel" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">CRIMINAL MATTERS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Effective presentation and defense strategy in criminal trials, bail matters, and appellate cases.</p>
+        </div>
+
+        <!-- Grid Item 3 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-neutral-100 lg:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="users" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.12em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">FAMILY & MATRIMONIAL</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Divorce, maintenance, custody, and specialized legal support for domestic, partition and family issues.</p>
+        </div>
+
+        <!-- Grid Item 4 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 lg:border-b-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="home" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">PROPERTY DISPUTES</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Property registration, sale/purchase claims, structural verification, partition, and title clearance.</p>
+        </div>
+
+        <!-- Grid Item 5 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 lg:border-b-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="file-text" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.12em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">DOCUMENTATION & AFFIDAVITS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Professional drafting, agreement vetting, legal notice preparations, and sworn testimonies.</p>
+        </div>
+
+        <!-- Grid Item 6 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group lg:border-b-0 lg:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="user-check" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">LEGAL CONSULTATION</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Strategic consultation and advisory briefings regarding complex legal disputes or upcoming trials.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== ABOUT SECTION =============== -->
+  <section id="about" class="bg-[#0f1115] text-white py-24 px-4 sm:px-8 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,#151820,transparent_55%)] opacity-80 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Top banner layout with Scales of justice placeholder -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20 bg-[#1a1e24]/40 rounded-2xl p-6 sm:p-10 border border-[#c28833]/15 backdrop-blur-sm">
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative max-w-[280px] rounded-xl overflow-hidden border border-[#c28833]/30 shadow-2xl">
+            <img 
+              DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh Legal Associates - Advocate Shubhanjali Shukla</title>
+  
+  <!-- Fonts Integration (Premium Serif & Classic Gothic Style) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons Library -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Styling adjustments to match exact colors and typography */
+    :root {
+      --gold-light: #f3e9cc;
+      --gold-main: #c28833;
+      --gold-dark: #84501e;
+      --legal-dark: #0f1115;
+      --legal-gray: #1a1e24;
+      --legal-black: #050608;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--legal-dark);
+      color: #ffffff;
+    }
+
+    .font-cinzel {
+      font-family: 'Cinzel', serif;
+    }
+
+    .font-serif-playfair {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Gold text gradient */
+    .gold-text {
+      background: linear-gradient(135deg, #faf6eb 0%, #c28833 70%, #84501e 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Glow Effect */
+    .gold-glow {
+      box-shadow: 0 0 15px rgba(194, 136, 51, 0.2);
+    }
+
+    /* Hide scrollbars during modal open */
+    .modal-active {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="selection:bg-[#c28833] selection:text-[#0f1115] antialiased">
+
+  <!-- =============== HEADER / NAVIGATION =============== -->
+  <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-black/80 backdrop-blur-md border-b border-[#c28833]/20 py-4 shadow-lg" id="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between">
+        
+        <!-- Logo & Brand -->
+        <a href="#home" class="flex items-center space-x-3 group">
+          <div class="bg-gradient-to-br from-[#f3e9cc] to-[#c28833] p-2 rounded-lg border border-[#c28833]/30 transition-transform group-hover:scale-105 duration-300">
+            <i data-lucide="scale" class="h-6 w-6 text-[#0f1115] stroke-[2]"></i>
+          </div>
+          <div>
+            <span class="block font-cinzel text-lg sm:text-xl font-bold tracking-wider text-[#dab970]">RAJESH LEGAL</span>
+            <span class="block text-[9px] tracking-[0.25em] text-[#faf6eb]/65 uppercase">Advocates & Legal Consultants</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">HOME</a>
+          <a href="#practice-areas" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">PRACTICE AREAS</a>
+          <a href="#about" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">ABOUT</a>
+          <a href="#contact" class="text-xs font-semibold tracking-widest text-[#faf6eb]/80 hover:text-[#dab970] transition-colors">CONTACT</a>
+          
+          <button onclick="openModal()" class="flex items-center space-x-2 px-5 py-2.5 border border-[#c28833] rounded-lg hover:bg-[#c28833] hover:text-[#0f1115] text-[#dab970] text-xs font-bold tracking-widest transition-all duration-300 uppercase shadow-md cursor-pointer">
+            <i data-lucide="message-square" class="h-4 w-4"></i>
+            <span>WHATSAPP</span>
+          </button>
+        </nav>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-[#dab970] p-2 rounded focus:outline-none">
+          <i data-lucide="menu" class="h-6 w-6" id="menu-icon"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0f1115] border-b border-[#c28833]/20 py-4 px-6 space-y-3">
+      <a href="#home" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">HOME</a>
+      <a href="#practice-areas" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">PRACTICE AREAS</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">ABOUT</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block text-sm font-semibold text-[#faf6eb]/80 hover:text-[#dab970]">CONTACT</a>
+      <button onclick="openModal(); toggleMobileMenu()" class="w-full flex items-center justify-center space-x-2 py-3 bg-gradient-to-r from-[#c28833] to-[#84501e] text-[#0f1115] text-xs font-bold tracking-widest rounded-lg">
+        <i data-lucide="message-square" class="h-4 w-4"></i>
+        <span>WHATSAPP CONSULTATION</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =============== HERO / INTRODUCTION =============== -->
+  <section id="home" class="relative min-h-screen pt-32 pb-20 px-4 sm:px-8 flex items-center overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,#1e1a12,transparent_60%)] opacity-70 pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#0f1115] to-transparent pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 animate-fade-in">
+      
+      <!-- Text details -->
+      <div class="lg:col-span-7 space-y-8">
+        <div class="space-y-1">
+          <span class="block text-xs sm:text-sm font-bold tracking-[0.25em] text-[#c28833] uppercase">Advocate</span>
+          <div class="h-[2px] w-12 bg-[#c28833]"></div>
+        </div>
+
+        <h1 class="font-serif-playfair text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-[#faf6eb]">
+          Shubhanjali <span class="text-[#dab970] font-light italic">Shukla</span>
+          <span class="inline-block text-[#c28833] ml-2">
+            <i data-lucide="gavel" class="h-8 w-8 inline-block align-middle stroke-[1.5]"></i>
+          </span>
+        </h1>
+
+        <div class="flex items-center space-x-4 py-1">
+          <div class="h-[1px] flex-1 bg-gradient-to-r from-transparent to-[#c28833]/40"></div>
+          <p class="text-xs uppercase tracking-[0.18em] text-[#f3e9cc]/80 text-center font-medium">
+            Professional Legal Consultation & Assistance
+          </p>
+          <div class="h-[1px] flex-1 bg-gradient-to-l from-transparent to-[#c28833]/40"></div>
+        </div>
+
+        <!-- Official Status Badge -->
+        <div class="bg-[#1a1e24]/70 border border-[#c28833]/30 rounded-xl p-5 shadow-xl flex items-start space-x-4 max-w-xl">
+          <div class="bg-[#c28833]/10 p-2.5 rounded-lg border border-[#c28833]/30 text-[#dab970]">
+            <i data-lucide="award" class="h-6 w-6"></i>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold tracking-widest text-[#dab970] uppercase">State Member –</h4>
+            <p class="text-sm font-medium text-[#faf6eb]/90 leading-relaxed mt-0.5">
+              State Information Commission, Uttar Pradesh
+            </p>
+          </div>
+        </div>
+
+        <!-- Coordinates Details -->
+        <div class="space-y-4 max-w-xl text-sm text-[#faf6eb]/80">
+          <div class="flex items-start space-x-3">
+            <i data-lucide="map-pin" class="h-5 w-5 text-[#c28833] shrink-0 mt-0.5"></i>
+            <p class="leading-relaxed font-light">High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</p>
+          </div>
+          <div class="flex items-center space-x-3">
+            <i data-lucide="phone" class="h-5 w-5 text-[#c28833] shrink-0"></i>
+            <p class="font-semibold tracking-wider hover:text-[#dab970] transition-colors">+91 90050 17567</p>
+          </div>
+        </div>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+          <button onclick="openModal()" class="px-8 py-4 bg-gradient-to-r from-[#c28833] via-[#a36a26] to-[#84501e] text-[#0f1115] hover:opacity-90 font-bold text-xs tracking-[0.2em] rounded-lg shadow-lg flex items-center justify-center space-x-3 uppercase cursor-pointer">
+            <i data-lucide="message-square" class="h-5 w-5 fill-current"></i>
+            <span>WHATSAPP CONSULTATION</span>
+          </button>
+          <a href="https://wa.me/919005017567?text=Hello" target="_blank" class="px-8 py-4 bg-[#1a1e24]/50 border border-[#c28833] hover:bg-[#c28833]/10 text-[#dab970] font-bold text-xs tracking-[0.2em] rounded-lg text-center flex items-center justify-center space-x-2 uppercase">
+            <span>DIRECT CHAT NOW</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column - Portrait Image Mock -->
+      <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+        <div class="absolute -inset-1.5 rounded-2xl bg-gradient-to-br from-[#c28833]/20 via-transparent to-transparent blur-lg opacity-60"></div>
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-[#c28833]/40 max-w-[360px] aspect-[3/4] gold-glow">
+          <img 
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop" 
+            alt="Advocate Portrait Placeholder" 
+            class="w-full h-full object-cover object-top"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0f1115]/80 via-transparent to-transparent"></div>
+          <div class="absolute inset-4 border border-[#c28833]/20 rounded-xl pointer-events-none"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== PRACTICE AREAS =============== -->
+  <section id="practice-areas" class="bg-[#fcfbf9] text-[#1a1e24] py-24 px-4 sm:px-8 border-t border-b border-[#c28833]/20 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Title -->
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="font-cinzel text-3xl sm:text-4xl font-semibold tracking-[0.2em] text-[#0f1115]">PRACTICE AREAS</h2>
+        <div class="flex items-center justify-center space-x-3 max-w-sm mx-auto">
+          <div class="h-[1px] flex-1 bg-[#c28833]/60"></div>
+          <div class="w-2.5 h-2.5 bg-[#c28833] transform rotate-45 border border-[#84501e]"></div>
+          <div class="h-[1px] flex-1 bg-[#c28833]/60"></div>
+        </div>
+      </div>
+
+      <!-- Practice Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border border-neutral-200 rounded-xl overflow-hidden bg-white shadow-xl">
+        
+        <!-- Grid Item 1 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 last:border-b-0 last:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="scale" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">CIVIL MATTERS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Representation and advice in all types of civil disputes, property partition, and injunction cases.</p>
+        </div>
+
+        <!-- Grid Item 2 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="gavel" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">CRIMINAL MATTERS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Effective presentation and defense strategy in criminal trials, bail matters, and appellate cases.</p>
+        </div>
+
+        <!-- Grid Item 3 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-neutral-100 lg:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="users" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.12em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">FAMILY & MATRIMONIAL</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Divorce, maintenance, custody, and specialized legal support for domestic, partition and family issues.</p>
+        </div>
+
+        <!-- Grid Item 4 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 lg:border-b-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="home" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">PROPERTY DISPUTES</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Property registration, sale/purchase claims, structural verification, partition, and title clearance.</p>
+        </div>
+
+        <!-- Grid Item 5 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group border-b border-r border-neutral-100 lg:border-b-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="file-text" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.12em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">DOCUMENTATION & AFFIDAVITS</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Professional drafting, agreement vetting, legal notice preparations, and sworn testimonies.</p>
+        </div>
+
+        <!-- Grid Item 6 -->
+        <div class="p-8 sm:p-10 flex flex-col items-center text-center transition-all duration-300 hover:bg-[#c28833]/5 group lg:border-b-0 lg:border-r-0">
+          <div class="mb-6 text-[#c28833]"><i data-lucide="user-check" class="h-12 w-12 stroke-[1.5]"></i></div>
+          <h3 class="font-cinzel text-sm font-bold tracking-[0.15em] text-neutral-800 mb-4 group-hover:text-[#84501e] transition-colors">LEGAL CONSULTATION</h3>
+          <p class="text-xs sm:text-sm text-neutral-500 leading-relaxed font-light">Strategic consultation and advisory briefings regarding complex legal disputes or upcoming trials.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== ABOUT SECTION =============== -->
+  <section id="about" class="bg-[#0f1115] text-white py-24 px-4 sm:px-8 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,#151820,transparent_55%)] opacity-80 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      
+      <!-- Top banner layout with Scales of justice placeholder -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20 bg-[#1a1e24]/40 rounded-2xl p-6 sm:p-10 border border-[#c28833]/15 backdrop-blur-sm">
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative max-w-[280px] rounded-xl overflow-hidden border border-[#c28833]/30 shadow-2xl">
+            <img 
+              src="cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg" 
+               alt="Advocate Shubhanjali Shukla" 
+                class="w-full h-full object-cover object-top"
+/>
+            />
+          </div>
+        </div>
+        <div class="lg:col-span-8 space-y-6">
+          <span class="text-[#dab970] font-cinzel text-xs font-bold tracking-[0.2em] block uppercase">Our Vision & Commitment</span>
+          <h2 class="font-serif-playfair text-3xl sm:text-4xl font-extrabold text-[#faf6eb] tracking-tight">ABOUT THE FIRM</h2>
+          <div class="h-[2px] w-16 bg-gradient-to-r from-[#c28833] to-transparent"></div>
+          
+          <p class="text-sm sm:text-base text-[#faf6eb]/75 leading-relaxed font-light">
+            With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.
+          </p>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/50 leading-relaxed font-light italic">
+            "We believe that every citizen deserves standard representation, absolute confidentiality, and honest legal advisement from the highest commission levels down to single legal proceedings."
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Value 1 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="shield-check" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">INTEGRITY</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">We uphold the highest ethical standards of transparency, truthfulness and advocacy.</p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="target" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">DEDICATION</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">Committed heavily to delivering tailored, results-oriented legal defenses for every struggle.</p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="award" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">EXPERIENCE</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">Deep litigation capabilities inside complex judicial systems and Administrative Bodies.</p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="users" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">CLIENT FOCUSED</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">We put your ease, privacy, status safeguard, and target success above all priorities.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER SECTION =============== -->
+  <footer id="contact" class="bg-[#050608] text-white pt-20 pb-8 px-4 sm:px-8 border-t-[3px] border-[#84501e]">
+    <div class="max-w-7xl mx-auto divide-y divide-[#c28833]/20">
+      
+      <!-- Footer items -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16">
+        
+        <!-- Column 1 -->
+        <div class="md:col-span-4 space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="bg-gradient-to-br from-[#faf6eb] to-[#c28833] p-2 rounded-lg">
+              <i data-lucide="scale" class="h-6 w-6 text-[#0f1115] stroke-[2]"></i>
+            </div>
+            <div>
+              <span class="block font-cinzel text-xl font-bold tracking-wider text-[#dab970]">RAJESH LEGAL</span>
+              <span class="block text-xs font-semibold tracking-widest text-[#faf6eb]/50">ASSOCIATES</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/40 leading-relaxed font-light">
+            Providing highly professional legal consultations, drafting, and trial advocacy under Advocate Shubhanjali Shukla, State Information Commission Member.
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="md:col-span-2 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">QUICK LINKS</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <ul class="space-y-3 text-xs sm:text-sm text-[#faf6eb]/60">
+            <li><a href="#home" class="hover:text-[#dab970]">Home</a></li>
+            <li><a href="#practice-areas" class="hover:text-[#dab970]">Practice Areas</a></li>
+            <li><a href="#about" class="hover:text-[#dab970]">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="md:col-span-3 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">CONTACT INFO</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <ul class="space-y-4 text-xs sm:text-sm text-[#faf6eb]/70">
+            <li class="flex items-start space-x-3">
+              <i data-lucide="map-pin" class="h-5 w-5 text-[#c28833] shrink-0 mt-0.5" ></i>
+              <span class="leading-relaxed font-light">High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i data-lucide="phone" class="h-4 w-4 text-[#c28833]" ></i>
+              <span class="font-semibold tracking-wider">+91 90050 17567</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="md:col-span-3 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">CONSULTATION</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <p class="text-xs text-[#faf6eb]/50 leading-relaxed font-light">Schedule a secured offline or call consultation on WhatsApp with our advocate.</p>
+          <button onclick="openModal()" class="w-full py-3 px-4 bg-gradient-to-r from-[#c28833] to-[#84501e] text-[#0f1115] hover:opacity-90 font-extrabold text-xs tracking-widest rounded-lg flex items-center justify-center space-x-2 cursor-pointer">
+            <i data-lucide="message-square" class="h-4.5 w-4.5 fill-current"></i>
+            <span>WHATSAPP CONSULTATION</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Layout info -->
+      <div class="pt-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div class="text-center lg:text-left">
+            <p class="text-[10px] tracking-wider text-[#faf6eb]/40">&copy; 2026 Rajesh Legal Associates. All Rights Reserved.</p>
+          </div>
+          <div class="max-w-xl text-center lg:text-right">
+            <p class="text-[9px] sm:text-[10px] text-[#faf6eb]/30 leading-relaxed font-light">
+              Disclaimer: This website is intended solely for informational purposes and does not constitute solicitation or legal advertisement under Bar Council norms.
+            </p>
+          </div>
+          <div class="text-[#c28833]/40"><i data-lucide="scale" class="h-5 w-5"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =============== WHATSAPP APPOINTMENT MODAL POPUP =============== -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 h-screen w-screen hidden">
+    <!-- Overlay Backdrop -->
+    <div class="fixed inset-0 bg-black/85 backdrop-blur-sm" onclick="closeModal()"></div>
+    
+    <!-- Modal Dialog Body -->
+    <div class="bg-[#0f1115] border border-[#c28833]/40 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl relative z-10 text-white animate-scale-up">
+      
+      <!-- Top header strip -->
+      <div class="bg-gradient-to-r from-[#2d1607] via-[#1a1e24] to-[#2d1607] p-6 border-b border-[#c28833]/20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <i data-lucide="scale" class="h-5 w-5 text-[#dab970]"></i>
+          <h3 class="font-cinzel text-xs sm:text-sm font-bold tracking-widest text-[#dab970] uppercase">
+            Schedule Legal Consultation
+          </h3>
+        </div>
+        <button onclick="closeModal()" class="text-[#dab970] hover:text-white transition-colors cursor-pointer"><i data-lucide="x" class="h-6 w-6"></i></button>
+      </div>
+
+      <!-- Form Body Content -->
+      <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-8 space-y-5">
+        <p class="text-xs text-[#faf6eb]/60 leading-relaxed -mt-2">
+          Apni query details enter karein. Submit karte hi automatic professional WhatsApp message generate hokar hamare office ke number par send ho jayega.
+        </p>
+
+        <!-- Name input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Full Name *</label>
+          <input type="text" id="form-name" placeholder="e.g., Rahul Sharma" required class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833]" />
+        </div>
+
+        <!-- Phone input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Phone Number *</label>
+          <input type="tel" id="form-phone" placeholder="e.g., +91 9988776655" required class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833]" />
+        </div>
+
+        <!-- Practice area selector -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">legal Practice Area</label>
+          <select id="form-area" class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833] cursor-pointer">
+            <option value="Civil Matters">CIVIL MATTERS</option>
+            <option value="Criminal Matters">CRIMINAL MATTERS</option>
+            <option value="Family / Matrimonial Issues">FAMILY & MATRIMONIAL</option>
+            <option value="Property Disputes">Cyber Law</option>
+            <option value="Documentation / Affidavit">[P.I.L]</option>
+            <option value="General Consultation">LEGAL CONSULTATION</option>
+          </select>
+        </div>
+
+        <!-- Message Details input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Case Details / Messsage (Optional)</label>
+          <textarea id="form-message" rows="3" placeholder="Aap apni legal problem ya query likh sakte hain..." class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833] resize-none leading-relaxed"></textarea>
+        </div>
+
+        <!-- Submit btn -->
+        <div class="pt-2">
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#c28833] via-[#dab970] to-[#84501e] text-[#0f1115] font-extrabold text-xs tracking-[0.2em] rounded-lg shadow-lg flex items-center justify-center space-x-2.5 uppercase cursor-pointer">
+            <i data-lucide="message-square" class="h-5 w-5 fill-current"></i>
+            <span>PROCEED TO WHATSAPP</span>
+          </button>
+        </div>
+
+        <!-- Safe footer info -->
+        <div class="pt-3 border-t border-[#c28833]/10 flex items-center justify-center space-x-2 text-[10px] text-[#faf6eb]/40">
+          <i data-lucide="shield-check" class="h-4 w-4"></i>
+          <span>Submitting will route details directly via official WhatsApp securely.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =============== JAVASCRIPT LOGIC =============== -->
+  <script>
+    // Initialize Lucide Icons in page
+    lucide.createIcons();
+
+    // Toggle menu state for responsive mobile view
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Modal Control functions
+    function openModal() {
+      const modal = document.getElementById('consultation-modal');
+      modal.classList.remove('hidden');
+      document.body.classList.add('modal-active');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('consultation-modal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('modal-active');
+    }
+
+    // Handles form data framing and triggers WhatsApp redirection
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('form-name').value;
+      const phone = document.getElementById('form-phone').value;
+      const area = document.getElementById('form-area').value;
+      const message = document.getElementById('form-message').value;
+
+      // Professional message parsing
+      const formattedMessage = `*RAJESH LEGAL ASSOCIATES - NEW CONSULTATION REQUEST*\n\n` +
+                               `*Name:* ${name}\n` +
+                               `*Phone:* ${phone}\n` +
+                               `*Practice Area:* ${area}\n` +
+                               `*Case Details:* ${message || 'No details provided'}\n\n` +
+                               `I want to request and reserve a consultation time slot. Please confirm.`;
+
+      const whatsappNumber = "+919005017567"; // Advocate target cell
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
+
+      // Direct secure navigation
+      window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+      closeModal();
+      document.getElementById('consultation-form').reset();
+    }
+
+    // Interactive header shadow changes on scrolling
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 20) {
+        header.classList.add('py-2', 'bg-black/95');
+        header.classList.remove('py-4', 'bg-black/80');
+      } else {
+        header.classList.remove('py-2', 'bg-black/95');
+        header.classList.add('py-4', 'bg-black/80');
+      }
+    });
+  </script>
+</body>
+</html>
+
+cc2b1b31-174c-474b-8e9d-a4285d4582fb.jpeg Yeha image add karo upper wale index mai 
+            />
+          </div>
+        </div>
+        <div class="lg:col-span-8 space-y-6">
+          <span class="text-[#dab970] font-cinzel text-xs font-bold tracking-[0.2em] block uppercase">Our Vision & Commitment</span>
+          <h2 class="font-serif-playfair text-3xl sm:text-4xl font-extrabold text-[#faf6eb] tracking-tight">ABOUT THE FIRM</h2>
+          <div class="h-[2px] w-16 bg-gradient-to-r from-[#c28833] to-transparent"></div>
+          
+          <p class="text-sm sm:text-base text-[#faf6eb]/75 leading-relaxed font-light">
+            With a commitment to justice and a client-first approach, we provide professional legal services with integrity, dedication and transparency. Our goal is to deliver the best possible legal solutions and safeguard the rights of our clients.
+          </p>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/50 leading-relaxed font-light italic">
+            "We believe that every citizen deserves standard representation, absolute confidentiality, and honest legal advisement from the highest commission levels down to single legal proceedings."
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Value 1 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="shield-check" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">INTEGRITY</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">We uphold the highest ethical standards of transparency, truthfulness and advocacy.</p>
+        </div>
+
+        <!-- Value 2 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="target" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">DEDICATION</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">Committed heavily to delivering tailored, results-oriented legal defenses for every struggle.</p>
+        </div>
+
+        <!-- Value 3 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="award" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">EXPERIENCE</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">Deep litigation capabilities inside complex judicial systems and Administrative Bodies.</p>
+        </div>
+
+        <!-- Value 4 -->
+        <div class="bg-[#1a1e24] border border-[#c28833]/10 hover:border-[#c28833]/40 rounded-xl p-6 transition-all duration-300 group">
+          <div class="p-3 bg-[#c28833]/10 border border-[#c28833]/20 rounded-lg text-[#dab970] w-fit mb-4">
+            <i data-lucide="users" class="h-6 w-6"></i>
+          </div>
+          <h4 class="font-cinzel text-xs sm:text-sm font-bold tracking-[0.15em] text-[#dab970] mb-2 uppercase">CLIENT FOCUSED</h4>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/60 leading-relaxed font-light">We put your ease, privacy, status safeguard, and target success above all priorities.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER SECTION =============== -->
+  <footer id="contact" class="bg-[#050608] text-white pt-20 pb-8 px-4 sm:px-8 border-t-[3px] border-[#84501e]">
+    <div class="max-w-7xl mx-auto divide-y divide-[#c28833]/20">
+      
+      <!-- Footer items -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16">
+        
+        <!-- Column 1 -->
+        <div class="md:col-span-4 space-y-6">
+          <div class="flex items-center space-x-3">
+            <div class="bg-gradient-to-br from-[#faf6eb] to-[#c28833] p-2 rounded-lg">
+              <i data-lucide="scale" class="h-6 w-6 text-[#0f1115] stroke-[2]"></i>
+            </div>
+            <div>
+              <span class="block font-cinzel text-xl font-bold tracking-wider text-[#dab970]">RAJESH LEGAL</span>
+              <span class="block text-xs font-semibold tracking-widest text-[#faf6eb]/50">ASSOCIATES</span>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-[#faf6eb]/40 leading-relaxed font-light">
+            Providing highly professional legal consultations, drafting, and trial advocacy under Advocate Shubhanjali Shukla, State Information Commission Member.
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="md:col-span-2 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">QUICK LINKS</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <ul class="space-y-3 text-xs sm:text-sm text-[#faf6eb]/60">
+            <li><a href="#home" class="hover:text-[#dab970]">Home</a></li>
+            <li><a href="#practice-areas" class="hover:text-[#dab970]">Practice Areas</a></li>
+            <li><a href="#about" class="hover:text-[#dab970]">About</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="md:col-span-3 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">CONTACT INFO</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <ul class="space-y-4 text-xs sm:text-sm text-[#faf6eb]/70">
+            <li class="flex items-start space-x-3">
+              <i data-lucide="map-pin" class="h-5 w-5 text-[#c28833] shrink-0 mt-0.5" ></i>
+              <span class="leading-relaxed font-light">High Court New Building, Chamber No. B-509, 4th Floor, Lucknow</span>
+            </li>
+            <li class="flex items-center space-x-3">
+              <i data-lucide="phone" class="h-4 w-4 text-[#c28833]" ></i>
+              <span class="font-semibold tracking-wider">+91 90050 17567</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="md:col-span-3 space-y-5">
+          <h4 class="text-[11px] font-bold tracking-widest text-[#dab970] uppercase">CONSULTATION</h4>
+          <div class="h-[2px] w-6 bg-[#c28833]"></div>
+          <p class="text-xs text-[#faf6eb]/50 leading-relaxed font-light">Schedule a secured offline or call consultation on WhatsApp with our advocate.</p>
+          <button onclick="openModal()" class="w-full py-3 px-4 bg-gradient-to-r from-[#c28833] to-[#84501e] text-[#0f1115] hover:opacity-90 font-extrabold text-xs tracking-widest rounded-lg flex items-center justify-center space-x-2 cursor-pointer">
+            <i data-lucide="message-square" class="h-4.5 w-4.5 fill-current"></i>
+            <span>WHATSAPP CONSULTATION</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Bottom Layout info -->
+      <div class="pt-8">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div class="text-center lg:text-left">
+            <p class="text-[10px] tracking-wider text-[#faf6eb]/40">&copy; 2026 Rajesh Legal Associates. All Rights Reserved.</p>
+          </div>
+          <div class="max-w-xl text-center lg:text-right">
+            <p class="text-[9px] sm:text-[10px] text-[#faf6eb]/30 leading-relaxed font-light">
+              Disclaimer: This website is intended solely for informational purposes and does not constitute solicitation or legal advertisement under Bar Council norms.
+            </p>
+          </div>
+          <div class="text-[#c28833]/40"><i data-lucide="scale" class="h-5 w-5"></i></div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =============== WHATSAPP APPOINTMENT MODAL POPUP =============== -->
+  <div id="consultation-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 h-screen w-screen hidden">
+    <!-- Overlay Backdrop -->
+    <div class="fixed inset-0 bg-black/85 backdrop-blur-sm" onclick="closeModal()"></div>
+    
+    <!-- Modal Dialog Body -->
+    <div class="bg-[#0f1115] border border-[#c28833]/40 rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl relative z-10 text-white animate-scale-up">
+      
+      <!-- Top header strip -->
+      <div class="bg-gradient-to-r from-[#2d1607] via-[#1a1e24] to-[#2d1607] p-6 border-b border-[#c28833]/20 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <i data-lucide="scale" class="h-5 w-5 text-[#dab970]"></i>
+          <h3 class="font-cinzel text-xs sm:text-sm font-bold tracking-widest text-[#dab970] uppercase">
+            Schedule Legal Consultation
+          </h3>
+        </div>
+        <button onclick="closeModal()" class="text-[#dab970] hover:text-white transition-colors cursor-pointer"><i data-lucide="x" class="h-6 w-6"></i></button>
+      </div>
+
+      <!-- Form Body Content -->
+      <form id="consultation-form" onsubmit="handleFormSubmit(event)" class="p-6 sm:p-8 space-y-5">
+        <p class="text-xs text-[#faf6eb]/60 leading-relaxed -mt-2">
+          Apni query details enter karein. Submit karte hi automatic professional WhatsApp message generate hokar hamare office ke number par send ho jayega.
+        </p>
+
+        <!-- Name input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Full Name *</label>
+          <input type="text" id="form-name" placeholder="e.g., Rahul Sharma" required class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833]" />
+        </div>
+
+        <!-- Phone input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Phone Number *</label>
+          <input type="tel" id="form-phone" placeholder="e.g., +91 9988776655" required class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833]" />
+        </div>
+
+        <!-- Practice area selector -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">legal Practice Area</label>
+          <select id="form-area" class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833] cursor-pointer">
+            <option value="Civil Matters">CIVIL MATTERS</option>
+            <option value="Criminal Matters">CRIMINAL MATTERS</option>
+            <option value="Family / Matrimonial Issues">FAMILY & MATRIMONIAL</option>
+            <option value="Cyber Law">Cyber Law</option>
+            <option value="[P.I.L]">[P.I.L]</option>
+            <option value="General Consultation">LEGAL CONSULTATION</option>
+          </select>
+        </div>
+
+        <!-- Message Details input -->
+        <div class="space-y-1.5">
+          <label class="block text-[11px] font-bold tracking-widest text-[#dab970] uppercase">Case Details / Messsage (Optional)</label>
+          <textarea id="form-message" rows="3" placeholder="Aap apni legal problem ya query likh sakte hain..." class="w-full bg-[#1a1e24] border border-[#c28833]/20 rounded-lg py-3 px-4 text-sm text-white focus:outline-none focus:border-[#c28833] resize-none leading-relaxed"></textarea>
+        </div>
+
+        <!-- Submit btn -->
+        <div class="pt-2">
+          <button type="submit" class="w-full py-4 bg-gradient-to-r from-[#c28833] via-[#dab970] to-[#84501e] text-[#0f1115] font-extrabold text-xs tracking-[0.2em] rounded-lg shadow-lg flex items-center justify-center space-x-2.5 uppercase cursor-pointer">
+            <i data-lucide="message-square" class="h-5 w-5 fill-current"></i>
+            <span>PROCEED TO WHATSAPP</span>
+          </button>
+        </div>
+
+        <!-- Safe footer info -->
+        <div class="pt-3 border-t border-[#c28833]/10 flex items-center justify-center space-x-2 text-[10px] text-[#faf6eb]/40">
+          <i data-lucide="shield-check" class="h-4 w-4"></i>
+          <span>Submitting will route details directly via official WhatsApp securely.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- =============== JAVASCRIPT LOGIC =============== -->
+  <script>
+    // Initialize Lucide Icons in page
+    lucide.createIcons();
+
+    // Toggle menu state for responsive mobile view
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+
+    // Modal Control functions
+    function openModal() {
+      const modal = document.getElementById('consultation-modal');
+      modal.classList.remove('hidden');
+      document.body.classList.add('modal-active');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('consultation-modal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('modal-active');
+    }
+
+    // Handles form data framing and triggers WhatsApp redirection
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('form-name').value;
+      const phone = document.getElementById('form-phone').value;
+      const area = document.getElementById('form-area').value;
+      const message = document.getElementById('form-message').value;
+
+      // Professional message parsing
+      const formattedMessage = `*RAJESH LEGAL ASSOCIATES - NEW CONSULTATION REQUEST*\n\n` +
+                               `*Name:* ${name}\n` +
+                               `*Phone:* ${phone}\n` +
+                               `*Practice Area:* ${area}\n` +
+                               `*Case Details:* ${message || 'No details provided'}\n\n` +
+                               `I want to request and reserve a consultation time slot. Please confirm.`;
+
+      const whatsappNumber = "+919005017567"; // Advocate target cell
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(formattedMessage)}`;
+
+      // Direct secure navigation
+      window.open(whatsappURL, '_blank', 'noopener,noreferrer');
+      closeModal();
+      document.getElementById('consultation-form').reset();
+    }
+
+    // Interactive header shadow changes on scrolling
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('main-header');
+      if (window.scrollY > 20) {
+        header.classList.add('py-2', 'bg-black/95');
+        header.classList.remove('py-4', 'bg-black/80');
+      } else {
+        header.classList.remove('py-2', 'bg-black/95');
+        header.classList.add('py-4', 'bg-black/80');
+      }
+    });
+  </script>
 </body>
 </html>
